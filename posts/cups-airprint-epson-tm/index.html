@@ -1,0 +1,132 @@
+<!doctype html><html lang=en-us>
+<head>
+<title>AirPrint with Epson TM-T20II / xyzroe's blog</title>
+<link rel="shortcut icon" href=../../favicon.ico>
+<meta charset=utf-8>
+<meta name=generator content="Hugo 0.87.0">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=author content="xyzroe">
+<meta name=description content>
+<link rel=stylesheet href=//xyzroe.cc/css/main.min.e936c5013d179081bc7d200f84dcfe9c246ba63f93f7d53028d5ba8329bb286c.css>
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="AirPrint with Epson TM-T20II">
+<meta name=twitter:description content="Ubuntu Xenial Docker image with CUPS and additional Epson TM-T20II drivers It is intended to be used as an AirPrint relay on the Synology NAS, and the local Avahi will be used to advertise printers on the network.
+Changes in comparison with the original:
+ updated version of Ubuntu added prebuilt rastertozj from here added tm-t20-orig.ppd is tm-t20ii-rastertotmt.ppd provided on Epson site modifited to use rastertozj filter added tm-t20-NP.ppd to make possible print Nova Poshta Zebra Markings 100x100mm from iOS browser (with image scaling) added tm-t20-TG.">
+<meta property="og:title" content="AirPrint with Epson TM-T20II">
+<meta property="og:description" content="Ubuntu Xenial Docker image with CUPS and additional Epson TM-T20II drivers It is intended to be used as an AirPrint relay on the Synology NAS, and the local Avahi will be used to advertise printers on the network.
+Changes in comparison with the original:
+ updated version of Ubuntu added prebuilt rastertozj from here added tm-t20-orig.ppd is tm-t20ii-rastertotmt.ppd provided on Epson site modifited to use rastertozj filter added tm-t20-NP.ppd to make possible print Nova Poshta Zebra Markings 100x100mm from iOS browser (with image scaling) added tm-t20-TG.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="//xyzroe.cc/posts/cups-airprint-epson-tm/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2021-01-02T00:00:00+00:00">
+<meta property="article:modified_time" content="2021-01-02T00:00:00+00:00">
+<script src=https://unpkg.com/feather-icons></script>
+</head>
+<body>
+<header class=app-header>
+<a href=//xyzroe.cc/><img class=app-header-avatar src=../../img/avatar.png alt=xyzroe></a>
+<h1> </h1>
+<nav class=app-header-menu>
+<a class=app-header-menu-item href=../../>Home</a>
+-
+<a class=app-header-menu-item href=../../tags/>Tags</a>
+-
+<a class=app-header-menu-item href=../../about/>About</a>
+</nav>
+<p>Technical automation, project management, analytics and process optimization</p>
+<div class=app-header-social>
+<a href=https://t.me/xyzroe target=_blank rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-send"><title>Telergam</title><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+</a>
+<a href=mailto:z@mind.in.ua target=_blank rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-at-sign"><title>Email</title><circle cx="12" cy="12" r="4"/><path d="M16 8v5a3 3 0 006 0v-1a10 10 0 10-3.92 7.94"/></svg>
+</a>
+<a href=https://github.com/xyzroe target=_blank rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github"><title>Github</title><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37.0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44.0 0020 4.77 5.07 5.07.0 0019.91 1S18.73.65 16 2.48a13.38 13.38.0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07.0 005 4.77 5.44 5.44.0 003.5 8.55c0 5.42 3.3 6.61 6.44 7A3.37 3.37.0 009 18.13V22"/></svg>
+</a>
+</div>
+<div class=app-footer>
+&copy; 2020<script>(new Date).getFullYear()>2010&&document.write(" - "+(new Date).getFullYear())</script>
+</div>
+<div class=app-footer>
+<a rel=license href=http://creativecommons.org/licenses/by-sa/4.0/>
+<img alt="Creative Commons License" style=border-width:0 src=https://i.creativecommons.org/l/by-sa/4.0/88x31.png></a>
+</div>
+</header>
+<main class=app-container>
+<article class=post>
+<header class=post-header>
+<h1 class=post-title>AirPrint with Epson TM-T20II</h1>
+<div class=post-meta>
+<div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar"><title>calendar</title><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+Jan 2, 2021
+</div>
+<div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock"><title>clock</title><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+2 min read
+</div>
+<div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag"><title>tag</title><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83.0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+<a class=tag href=//xyzroe.cc/tags/airprint/>AirPrint</a>
+<a class=tag href=//xyzroe.cc/tags/epson/>Epson</a>
+<a class=tag href=//xyzroe.cc/tags/docker/>Docker</a>
+<a class=tag href=//xyzroe.cc/tags/synology/>Synology</a>
+</div>
+</div>
+</header>
+<div class=post-content>
+<p><img src=Epson-TM-T20II-POS.png alt="EPSON TM T20II">
+<img src=Apple-AirPrint-new-logo.png alt="Apple AirPrint"></p>
+<h2 id=ubuntu-xenial-docker-image-with-cups-and-additional-epson-tm-t20ii-drivers>Ubuntu Xenial Docker image with CUPS and additional Epson TM-T20II drivers</h2>
+<p>It is intended to be used as an AirPrint relay on the Synology NAS, and the local Avahi will be used to advertise printers on the network.</p>
+<p>Changes in comparison with the <a href=https://github.com/quadportnick/docker-cups-airprint>original</a>:</p>
+<ul>
+<li>updated version of Ubuntu</li>
+<li>added prebuilt rastertozj from <a href=https://github.com/nemik/epson-tm-t20-cups>here</a></li>
+<li>added tm-t20-orig.ppd is tm-t20ii-rastertotmt.ppd provided on Epson site modifited to use rastertozj filter</li>
+<li>added tm-t20-NP.ppd to make possible print Nova Poshta Zebra Markings 100x100mm from iOS browser (with image scaling)</li>
+<li>added tm-t20-TG.ppd to make possible print Nova Poshta Zebra Markings 100x100mm from iOS PDF file (without image scaling)</li>
+</ul>
+<p>This is also a reason to dive deeper into GitHub / Docker / CUPS, so why not? Hope this is helpful to someone.</p>
+<h3 id=prereqs>Prereqs</h3>
+<ul>
+<li>No other printers should be shared under Control Panel>External Devices>Printer so that the DSM&rsquo;s CUPS is not running.</li>
+<li><code>Enable Bonjour service discovery</code> needs to be marked under Control Panel>Network>DSM Settings</li>
+</ul>
+<h3 id=configuration>Configuration</h3>
+<h4 id=volumes>Volumes:</h4>
+<ul>
+<li><code>/config</code>: where the persistent printer configs will be stored</li>
+<li><code>/services</code>: where the Avahi service files will be generated</li>
+</ul>
+<h4 id=variables>Variables:</h4>
+<ul>
+<li><code>CUPSADMIN</code>: the CUPS admin user you want created</li>
+<li><code>CUPSPASSWORD</code>: the password for the CUPS admin user</li>
+</ul>
+<h4 id=ports>Ports:</h4>
+<ul>
+<li><code>631</code>: the TCP port for CUPS must be exposed</li>
+</ul>
+<h3 id=using>Using</h3>
+<p>CUPS will be configurable at http://[diskstation]:631 using the CUPSADMIN/CUPSPASSWORD when you do something administrative.</p>
+<h3 id=cli-mode-running>CLI mode running</h3>
+<pre><code>docker run -d \
+  --name=cups \
+  --restart unless-stopped \
+  -p 631:631 \
+  -v /volume/docker/cups/config:/config \
+  -v /etc/avahi/services:/services \
+  -e CUPSADMIN=&quot;admin&quot; \
+  -e CUPSPASSWORD=&quot;admin&quot; \
+  xyzroe/cups-airprint-epson-tm
+</code></pre><h3 id=notes>Notes</h3>
+<ul>
+<li>If the <code>/services</code> volume isn&rsquo;t mapping to <code>/etc/avahi/services</code> then you will have to manually copy the .service files to that path at the command line.</li>
+<li>CUPS doesn&rsquo;t write out <code>printers.conf</code> immediately when making changes even though they&rsquo;re live in CUPS. Therefore it will take a few moments before the services files update</li>
+<li>Don&rsquo;t stop the container immediately if you intend to have a persistent configuration for this same reason</li>
+</ul>
+</div>
+<div class=post-footer>
+</div>
+</article>
+</main>
+<script>feather.replace()</script>
+</body>
+</html>

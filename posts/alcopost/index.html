@@ -1,0 +1,1457 @@
+<!doctype html><html lang=en-us>
+<head>
+<title>Alco Post / xyzroe's blog</title>
+<link rel="shortcut icon" href=../../favicon.ico>
+<meta charset=utf-8>
+<meta name=generator content="Hugo 0.87.0">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=author content="xyzroe">
+<meta name=description content>
+<link rel=stylesheet href=//xyzroe.cc/css/main.min.e936c5013d179081bc7d200f84dcfe9c246ba63f93f7d53028d5ba8329bb286c.css>
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="Alco Post">
+<meta name=twitter:description content="Hardware and software complex of the checkpoint 1 turnstile any
+2 controllers ZK MA300
+2 alcotesters Alcofor S40
+1 speaker and LED unit with voice prompts and mode indication
+1 orange pi with python utility for displaying photos and status of passing through the turnstile and writing to the database">
+<meta property="og:title" content="Alco Post">
+<meta property="og:description" content="Hardware and software complex of the checkpoint 1 turnstile any
+2 controllers ZK MA300
+2 alcotesters Alcofor S40
+1 speaker and LED unit with voice prompts and mode indication
+1 orange pi with python utility for displaying photos and status of passing through the turnstile and writing to the database">
+<meta property="og:type" content="article">
+<meta property="og:url" content="//xyzroe.cc/posts/alcopost/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2018-05-15T00:00:00+00:00">
+<meta property="article:modified_time" content="2018-05-15T00:00:00+00:00">
+<script src=https://unpkg.com/feather-icons></script>
+</head>
+<body>
+<header class=app-header>
+<a href=//xyzroe.cc/><img class=app-header-avatar src=../../img/avatar.png alt=xyzroe></a>
+<h1> </h1>
+<nav class=app-header-menu>
+<a class=app-header-menu-item href=../../>Home</a>
+-
+<a class=app-header-menu-item href=../../tags/>Tags</a>
+-
+<a class=app-header-menu-item href=../../about/>About</a>
+</nav>
+<p>Technical automation, project management, analytics and process optimization</p>
+<div class=app-header-social>
+<a href=https://t.me/xyzroe target=_blank rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-send"><title>Telergam</title><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+</a>
+<a href=mailto:z@mind.in.ua target=_blank rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-at-sign"><title>Email</title><circle cx="12" cy="12" r="4"/><path d="M16 8v5a3 3 0 006 0v-1a10 10 0 10-3.92 7.94"/></svg>
+</a>
+<a href=https://github.com/xyzroe target=_blank rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github"><title>Github</title><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37.0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44.0 0020 4.77 5.07 5.07.0 0019.91 1S18.73.65 16 2.48a13.38 13.38.0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07.0 005 4.77 5.44 5.44.0 003.5 8.55c0 5.42 3.3 6.61 6.44 7A3.37 3.37.0 009 18.13V22"/></svg>
+</a>
+</div>
+<div class=app-footer>
+&copy; 2020<script>(new Date).getFullYear()>2010&&document.write(" - "+(new Date).getFullYear())</script>
+</div>
+<div class=app-footer>
+<a rel=license href=http://creativecommons.org/licenses/by-sa/4.0/>
+<img alt="Creative Commons License" style=border-width:0 src=https://i.creativecommons.org/l/by-sa/4.0/88x31.png></a>
+</div>
+</header>
+<main class=app-container>
+<article class=post>
+<header class=post-header>
+<h1 class=post-title>Alco Post</h1>
+<div class=post-meta>
+<div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar"><title>calendar</title><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+May 15, 2018
+</div>
+<div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock"><title>clock</title><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+12 min read
+</div>
+<div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag"><title>tag</title><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83.0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+<a class=tag href=//xyzroe.cc/tags/alcopost/>AlcoPost</a>
+<a class=tag href=//xyzroe.cc/tags/linux/>Linux</a>
+<a class=tag href=//xyzroe.cc/tags/python/>Python</a>
+<a class=tag href=//xyzroe.cc/tags/arduino/>Arduino</a>
+</div>
+</div>
+</header>
+<div class=post-content>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin=anonymous>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin=anonymous>
+<div class=pswp tabindex=-1 role=dialog aria-hidden=true>
+<div class=pswp__bg></div>
+<div class=pswp__scroll-wrap>
+<div class=pswp__container>
+<div class=pswp__item></div>
+<div class=pswp__item></div>
+<div class=pswp__item></div>
+</div>
+<div class="pswp__ui pswp__ui--hidden">
+<div class=pswp__top-bar>
+<div class=pswp__counter></div>
+<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+<button class="pswp__button pswp__button--share" title=Share></button>
+<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+<div class=pswp__preloader>
+<div class=pswp__preloader__icn>
+<div class=pswp__preloader__cut>
+<div class=pswp__preloader__donut></div>
+</div>
+</div>
+</div>
+</div>
+<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+<div class=pswp__share-tooltip></div>
+</div>
+<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+</button>
+<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+</button>
+<div class=pswp__caption>
+<div class=pswp__caption__center></div>
+</div>
+</div>
+</div>
+</div>
+<h2 id=hardware-and-software-complex-of-the-checkpoint>Hardware and software complex of the checkpoint</h2>
+<p>1 turnstile any</p>
+<p>2 controllers ZK MA300</p>
+<p>2 alcotesters Alcofor S40</p>
+<p>1 speaker and LED unit with voice prompts and mode indication</p>
+<p>1 orange pi with python utility for displaying photos and status of passing through the turnstile and writing to the database</p>
+<p>order of actions: authorization to ZK - alcohol test - in case of an error again - in case of an error, again record the violation and refusal to work (or notification of dismissal, but with permission to exit) - record a successful passage and farewell.</p>
+<link rel=stylesheet href=../../css/hugo-easy-gallery.css>
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype=http://schema.org/ImageGallery>
+<div class=box>
+<figure itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject>
+<div class=img style=background-image:url(//xyzroe.cc/posts/alcopost/photos/buttons.jpg)>
+<img itemprop=thumbnail src=//xyzroe.cc/posts/alcopost/photos/buttons.jpg alt=Buttons>
+</div>
+<figcaption>
+<p>Buttons</p>
+</figcaption>
+<a href=//xyzroe.cc/posts/alcopost/photos/buttons.jpg itemprop=contentUrl></a>
+</figure>
+</div>
+<div class=box>
+<figure itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject>
+<div class=img style=background-image:url(//xyzroe.cc/posts/alcopost/photos/general.jpg)>
+<img itemprop=thumbnail src=//xyzroe.cc/posts/alcopost/photos/general.jpg alt=General>
+</div>
+<figcaption>
+<p>General</p>
+</figcaption>
+<a href=//xyzroe.cc/posts/alcopost/photos/general.jpg itemprop=contentUrl></a>
+</figure>
+</div>
+<div class=box>
+<figure itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject>
+<div class=img style=background-image:url(//xyzroe.cc/posts/alcopost/photos/inside_1.jpg)>
+<img itemprop=thumbnail src=//xyzroe.cc/posts/alcopost/photos/inside_1.jpg alt="Inside 1">
+</div>
+<figcaption>
+<p>Inside 1</p>
+</figcaption>
+<a href=//xyzroe.cc/posts/alcopost/photos/inside_1.jpg itemprop=contentUrl></a>
+</figure>
+</div>
+<div class=box>
+<figure itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject>
+<div class=img style=background-image:url(//xyzroe.cc/posts/alcopost/photos/inside_2.jpg)>
+<img itemprop=thumbnail src=//xyzroe.cc/posts/alcopost/photos/inside_2.jpg alt="Inside 2">
+</div>
+<figcaption>
+<p>Inside 2</p>
+</figcaption>
+<a href=//xyzroe.cc/posts/alcopost/photos/inside_2.jpg itemprop=contentUrl></a>
+</figure>
+</div>
+<div class=box>
+<figure itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject>
+<div class=img style=background-image:url(//xyzroe.cc/posts/alcopost/photos/inside_3.jpg)>
+<img itemprop=thumbnail src=//xyzroe.cc/posts/alcopost/photos/inside_3.jpg alt="Inside 3">
+</div>
+<figcaption>
+<p>Inside 3</p>
+</figcaption>
+<a href=//xyzroe.cc/posts/alcopost/photos/inside_3.jpg itemprop=contentUrl></a>
+</figure>
+</div>
+<div class=box>
+<figure itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject>
+<div class=img style=background-image:url(//xyzroe.cc/posts/alcopost/photos/inside_4.jpg)>
+<img itemprop=thumbnail src=//xyzroe.cc/posts/alcopost/photos/inside_4.jpg alt="Inside 4">
+</div>
+<figcaption>
+<p>Inside 4</p>
+</figcaption>
+<a href=//xyzroe.cc/posts/alcopost/photos/inside_4.jpg itemprop=contentUrl></a>
+</figure>
+</div>
+<div class=box>
+<figure itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject>
+<div class=img style=background-image:url(//xyzroe.cc/posts/alcopost/photos/inside_5.jpg)>
+<img itemprop=thumbnail src=//xyzroe.cc/posts/alcopost/photos/inside_5.jpg alt="Inside 5">
+</div>
+<figcaption>
+<p>Inside 5</p>
+</figcaption>
+<a href=//xyzroe.cc/posts/alcopost/photos/inside_5.jpg itemprop=contentUrl></a>
+</figure>
+</div>
+<div class=box>
+<figure itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject>
+<div class=img style=background-image:url(//xyzroe.cc/posts/alcopost/photos/nvrs.jpg)>
+<img itemprop=thumbnail src=//xyzroe.cc/posts/alcopost/photos/nvrs.jpg alt=Nvrs>
+</div>
+<figcaption>
+<p>Nvrs</p>
+</figcaption>
+<a href=//xyzroe.cc/posts/alcopost/photos/nvrs.jpg itemprop=contentUrl></a>
+</figure>
+</div>
+<div class=box>
+<figure itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject>
+<div class=img style=background-image:url(//xyzroe.cc/posts/alcopost/photos/screen.jpg)>
+<img itemprop=thumbnail src=//xyzroe.cc/posts/alcopost/photos/screen.jpg alt=Screen>
+</div>
+<figcaption>
+<p>Screen</p>
+</figcaption>
+<a href=//xyzroe.cc/posts/alcopost/photos/screen.jpg itemprop=contentUrl></a>
+</figure>
+</div>
+<div class=box>
+<figure itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject>
+<div class=img style=background-image:url(//xyzroe.cc/posts/alcopost/photos/table.jpg)>
+<img itemprop=thumbnail src=//xyzroe.cc/posts/alcopost/photos/table.jpg alt=Table>
+</div>
+<figcaption>
+<p>Table</p>
+</figcaption>
+<a href=//xyzroe.cc/posts/alcopost/photos/table.jpg itemprop=contentUrl></a>
+</figure>
+</div>
+<div class=box>
+<figure itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject>
+<div class=img style=background-image:url(//xyzroe.cc/posts/alcopost/photos/turnstile.jpg)>
+<img itemprop=thumbnail src=//xyzroe.cc/posts/alcopost/photos/turnstile.jpg alt=Turnstile>
+</div>
+<figcaption>
+<p>Turnstile</p>
+</figcaption>
+<a href=//xyzroe.cc/posts/alcopost/photos/turnstile.jpg itemprop=contentUrl></a>
+</figure>
+</div>
+</div>
+<script type=text/javascript src=//xyzroe.cc/js/pdf-js/build/pdf.js></script>
+<style>#the-canvas{border:1px solid #000;direction:ltr;width:100%;height:auto}#paginator{text-align:center;margin-bottom:10px}</style>
+<div id=paginator>
+<button id=prev>Previous</button>
+<button id=next>Next</button>
+&nbsp; &nbsp;
+<span>Page: <span id=page_num></span> / <span id=page_count></span></span>
+</div>
+<div id=embed-pdf-container>
+<canvas id=the-canvas></canvas>
+</div>
+<script type=text/javascript>window.onload=function(){var i="//xyzroe.cc/posts/alcopost/alcopost.pdf",l="true",g=window['pdfjs-dist/build/pdf'],c,a,e,b,k,f,j;g.GlobalWorkerOptions.workerSrc="//xyzroe.cc//js/pdf-js/build/pdf.worker.js",c=null,a=1,e=!1,b=null,k=3,f=document.getElementById('the-canvas'),j=f.getContext('2d');function d(a){e=!0,c.getPage(a).then(function(c){var a=c.getViewport({scale:k}),g,h;f.height=a.height,f.width=a.width,g={canvasContext:j,viewport:a},h=c.render(g),h.promise.then(function(){e=!1,b!==null&&(d(b),b=null)})}),document.getElementById('page_num').textContent=a}function h(a){e?b=a:d(a)}l=="true"&&(document.getElementById("paginator").style.display='none');function m(){if(a<=1)return;a--,h(a)}document.getElementById('prev').addEventListener('click',m);function n(){if(a>=c.numPages)return;a++,h(a)}document.getElementById('next').addEventListener('click',n),g.getDocument(i).promise.then(function(b){c=b,document.getElementById('page_count').textContent=c.numPages,d(a)})}</script>
+<p><a href=OrangePi.zip>OrangePi Alco Post utility</a>
+<a href=OrangePi.zip target=_blank>
+<i data-feather=download stroke-width=2 width=32 height=32 color=#6f0 style=position:relative;top:10px></i>
+<span class=screen-reader-text></span>
+</a>
+</p>
+<p><a href=Arduino/Wiegand-V3-Library-for-all-Arduino.zip>Wiegand-V3-Library-for-all-Arduino.zip</a>
+<a href=Arduino/Wiegand-V3-Library-for-all-Arduino.zip target=_blank>
+<i data-feather=download stroke-width=2 width=32 height=32 color=#6f0 style=position:relative;top:10px></i>
+<span class=screen-reader-text></span>
+</a>
+</p>
+<figure class=code>
+<figcaption>
+<span>Arduino code</span>
+</figcaption>
+<div class=codewrapper>
+<div class=highlight><div style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">  1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">  2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">  3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">  4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">  5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">  6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">  7
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">  8
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">  9
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 10
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 11
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 12
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 13
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 14
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 15
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 16
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 17
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 18
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 19
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 20
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 21
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 22
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 23
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 24
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 25
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 26
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 27
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 28
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 29
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 30
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 31
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 32
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 33
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 34
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 35
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 36
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 37
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 38
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 39
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 40
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 41
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 42
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 43
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 44
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 45
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 46
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 47
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 48
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 49
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 50
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 51
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 52
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 53
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 54
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 55
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 56
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 57
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 58
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 59
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 60
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 61
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 62
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 63
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 64
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 65
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 66
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 67
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 68
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 69
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 70
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 71
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 72
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 73
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 74
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 75
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 76
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 77
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 78
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 79
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 80
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 81
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 82
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 83
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 84
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 85
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 86
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 87
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 88
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 89
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 90
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 91
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 92
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 93
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 94
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 95
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 96
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 97
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 98
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 99
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">100
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">101
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">102
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">103
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">104
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">105
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">106
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">107
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">108
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">109
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">110
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">111
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">112
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">113
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">114
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">115
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">116
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">117
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">118
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">119
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">120
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">121
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">122
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">123
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">124
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">125
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">126
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">127
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">128
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">129
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">130
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">131
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">132
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">133
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">134
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">135
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">136
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">137
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">138
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">139
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">140
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">141
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">142
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">143
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">144
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">145
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">146
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">147
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">148
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">149
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">150
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">151
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">152
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">153
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">154
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">155
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">156
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">157
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">158
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">159
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">160
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">161
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">162
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">163
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">164
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">165
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">166
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">167
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">168
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">169
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">170
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">171
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">172
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">173
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">174
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">175
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">176
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">177
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">178
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">179
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">180
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">181
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">182
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">183
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">184
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">185
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">186
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">187
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">188
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">189
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">190
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">191
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">192
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">193
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">194
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">195
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">196
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">197
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">198
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">199
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">200
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">201
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">202
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">203
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">204
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">205
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">206
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">207
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">208
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">209
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">210
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">211
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">212
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">213
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">214
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">215
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">216
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">217
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">218
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">219
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">220
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">221
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">222
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">223
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">224
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">225
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">226
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">227
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">228
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">229
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">230
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">231
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">232
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">233
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">234
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">235
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">236
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">237
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">238
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">239
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">240
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">241
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">242
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">243
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">244
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">245
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">246
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">247
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">248
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">249
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">250
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">251
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">252
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">253
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">254
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">255
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">256
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">257
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">258
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">259
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">260
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">261
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">262
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">263
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">264
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">265
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">266
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">267
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">268
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">269
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">270
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">271
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">272
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">273
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">274
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">275
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">276
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">277
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">278
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">279
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">280
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">281
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">282
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">283
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">284
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">285
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">286
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">287
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">288
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">289
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">290
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">291
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">292
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">293
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">294
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">295
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">296
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">297
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">298
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">299
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">300
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">301
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">302
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">303
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">304
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">305
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">306
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">307
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">308
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">309
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">310
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">311
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">312
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">313
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">314
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">315
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">316
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">317
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">318
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">319
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">320
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">321
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">322
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">323
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">324
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">325
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">326
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">327
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">328
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">329
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">330
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">331
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">332
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">333
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">334
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">335
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">336
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">337
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">338
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">339
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">340
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">341
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">342
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">343
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">344
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">345
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">346
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">347
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">348
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">349
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">350
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">351
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">352
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">353
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">354
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">355
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">356
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">357
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">358
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">359
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">360
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">361
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">362
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">363
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">364
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">365
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">366
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">367
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">368
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">369
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">370
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">371
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">372
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">373
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">374
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">375
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">376
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">377
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">378
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">379
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">380
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">381
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">382
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">383
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">384
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">385
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">386
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">387
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">388
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">389
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">390
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">391
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">392
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">393
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">394
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">395
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">396
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">397
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">398
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">399
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">400
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">401
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">402
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">403
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">404
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">405
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">406
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">407
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">408
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">409
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">410
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">411
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">412
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">413
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">414
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">415
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">416
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">417
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">418
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">419
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">420
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">421
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">422
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">423
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">424
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">425
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">426
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">427
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">428
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">429
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">430
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">431
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">432
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">433
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">434
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">435
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">436
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">437
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">438
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">439
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">440
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">441
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">442
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">443
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">444
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">445
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">446
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">447
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">448
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">449
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">450
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">451
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">452
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">453
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">454
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">455
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">456
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">457
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">458
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">459
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">460
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">461
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">462
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">463
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">464
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">465
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">466
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">467
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">468
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">469
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">470
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">471
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">472
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">473
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">474
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">475
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">476
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">477
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">478
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">479
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">480
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">481
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">482
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">483
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">484
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">485
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">486
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">487
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">488
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">489
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">490
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">491
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">492
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">493
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">494
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">495
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">496
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">497
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">498
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">499
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">500
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">501
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">502
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">503
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">504
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">505
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">506
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">507
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">508
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">509
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">510
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">511
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">512
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">513
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">514
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">515
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">516
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">517
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">518
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">519
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">520
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">521
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">522
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">523
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">524
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">525
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">526
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">527
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">528
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">529
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">530
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">531
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">532
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">533
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">534
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">535
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">536
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">537
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">538
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">539
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">540
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">541
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">542
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">543
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">544
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">545
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">546
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">547
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">548
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">549
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">550
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">551
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">552
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">553
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">554
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">555
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">556
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">557
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">558
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">559
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">560
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">561
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">562
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">563
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">564
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">565
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">566
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">567
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">568
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">569
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">570
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">571
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">572
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">573
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">574
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">575
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">576
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">577
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">578
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">579
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">580
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">581
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c><span style=color:#75715e>#include</span> <span style=color:#75715e>&lt;Wiegand.h&gt;</span><span style=color:#75715e>
+</span><span style=color:#75715e>#include</span> <span style=color:#75715e>&lt;ButtonDebounce.h&gt;</span><span style=color:#75715e>
+</span><span style=color:#75715e></span><span style=color:#75715e>//#include &lt;avr/wdt.h&gt;
+</span><span style=color:#75715e></span><span style=color:#75715e>#include</span> <span style=color:#75715e>&lt;DFPlayer_Mini_Mp3.h&gt;</span><span style=color:#75715e>
+</span><span style=color:#75715e></span>
+<span style=color:#75715e>#define FALSE 0
+</span><span style=color:#75715e>#define TRUE  1
+</span><span style=color:#75715e>#define ENTER 1
+</span><span style=color:#75715e>#define EXIT  2
+</span><span style=color:#75715e>#define ON    1
+</span><span style=color:#75715e>#define OFF   0
+</span><span style=color:#75715e></span>
+<span style=color:#75715e>//Input Pins
+</span><span style=color:#75715e>//uln2804 - 1 - 0,1,2,3,4
+</span><span style=color:#75715e></span><span style=color:#75715e>#define EnterZK         23
+</span><span style=color:#75715e>#define EnterAlcoOK     25
+</span><span style=color:#75715e>#define EnterAlcoAL     27
+</span><span style=color:#75715e>#define EnterAlcoRD     29
+</span><span style=color:#75715e>#define EnterAlcoOn     31
+</span><span style=color:#75715e></span>
+<span style=color:#75715e>//#define TurnReady       33
+</span><span style=color:#75715e>//#define TurnReady       35
+</span><span style=color:#75715e></span>
+
+<span style=color:#75715e>//uln2804 - 2 - 0,1,2,3
+</span><span style=color:#75715e></span><span style=color:#75715e>#define ExitZK          62
+</span><span style=color:#75715e>#define ExitAlcoOK      63
+</span><span style=color:#75715e>#define ExitAlcoAL      64
+</span><span style=color:#75715e>#define ExitAlcoRD      65
+</span><span style=color:#75715e>#define ExitAlcoOn      66
+</span><span style=color:#75715e></span>
+<span style=color:#75715e>//Output Pins
+</span><span style=color:#75715e>//uln2803 - 1 - 0,1,2,3,4,5,6
+</span><span style=color:#75715e></span><span style=color:#75715e>#define EnterLedGo      39
+</span><span style=color:#75715e>#define EnterLedStop    41
+</span><span style=color:#75715e>#define EnterAlcoRun    43
+</span><span style=color:#75715e>#define ExitLedGo       45
+</span><span style=color:#75715e>#define ExitLedStop     47
+</span><span style=color:#75715e>#define ExitAlcoRun     49
+</span><span style=color:#75715e>#define TurnEnter       51
+</span><span style=color:#75715e>#define TurnExit        53
+</span><span style=color:#75715e></span>
+<span style=color:#75715e>#define Vorota          59
+</span><span style=color:#75715e>#define DoorStreet      60
+</span><span style=color:#75715e>#define AlcoAlarm       61
+</span><span style=color:#75715e></span>
+<span style=color:#75715e>//Times setup
+</span><span style=color:#75715e></span><span style=color:#75715e>#define LockOpenTime    2000
+</span><span style=color:#75715e>#define AlarmOnTime     700
+</span><span style=color:#75715e>#define ResetStageTime  15</span><span style=color:#75715e>//seconds
+</span><span style=color:#75715e></span><span style=color:#75715e>#define AlcoStartTime   500
+</span><span style=color:#75715e>#define AlcoWaitMaxTime 5 </span><span style=color:#75715e>//seconds
+</span><span style=color:#75715e></span>
+<span style=color:#75715e>//DFPlayer setup
+</span><span style=color:#75715e></span><span style=color:#75715e>#define busyDFpin       7
+</span><span style=color:#75715e>#define mp3volume       25
+</span><span style=color:#75715e></span>
+<span style=color:#75715e>#define soundStartAgain 1 </span><span style=color:#75715e>//Начните с начала.
+</span><span style=color:#75715e></span><span style=color:#75715e>#define soundAlcoHowTo  2 </span><span style=color:#75715e>//Сделайте вдох, дождитесь зеленого индикатора, выдохните в прозрачную трубку.
+</span><span style=color:#75715e></span><span style=color:#75715e>#define soundEnterOK    3 </span><span style=color:#75715e>//Спасибо! Хорошей Вам смены!
+</span><span style=color:#75715e></span><span style=color:#75715e>#define soundExitOK     4 </span><span style=color:#75715e>//Спасибо! Хорошего Вам отдыха!
+</span><span style=color:#75715e></span><span style=color:#75715e>#define soundError      5 </span><span style=color:#75715e>//Ошибка!
+</span><span style=color:#75715e></span><span style=color:#75715e>#define soundNextTry    6 </span><span style=color:#75715e>//Попробуйте еще раз!
+</span><span style=color:#75715e></span><span style=color:#75715e>#define soundEnterAlarm 7 </span><span style=color:#75715e>//Вы пришли на работу в алкогольном опьянении, и на работу не допущены.
+</span><span style=color:#75715e></span><span style=color:#75715e>#define soundExitAlarm  8 </span><span style=color:#75715e>//Вы употребляли алкоголь на работе, и за это вас оштрафуют. В следующий раз вы будете уволены!
+</span><span style=color:#75715e></span><span style=color:#75715e>#define soundGo         9 </span><span style=color:#75715e>//Проходите пожалуйста
+</span><span style=color:#75715e></span>
+ButtonDebounce <span style=color:#a6e22e>enterZK</span>(EnterZK, <span style=color:#ae81ff>100</span>);
+ButtonDebounce <span style=color:#a6e22e>enterAlcoOK</span>(EnterAlcoOK, <span style=color:#ae81ff>100</span>);
+ButtonDebounce <span style=color:#a6e22e>enterAlcoAL</span>(EnterAlcoAL, <span style=color:#ae81ff>100</span>);
+ButtonDebounce <span style=color:#a6e22e>enterAlcoRD</span>(EnterAlcoRD, <span style=color:#ae81ff>100</span>);
+ButtonDebounce <span style=color:#a6e22e>enterAlcoOn</span>(EnterAlcoOn, <span style=color:#ae81ff>100</span>);
+ButtonDebounce <span style=color:#a6e22e>exitZK</span>(ExitZK, <span style=color:#ae81ff>100</span>);
+ButtonDebounce <span style=color:#a6e22e>exitAlcoOK</span>(ExitAlcoOK, <span style=color:#ae81ff>100</span>);
+ButtonDebounce <span style=color:#a6e22e>exitAlcoAL</span>(ExitAlcoAL, <span style=color:#ae81ff>100</span>);
+ButtonDebounce <span style=color:#a6e22e>exitAlcoRD</span>(ExitAlcoRD, <span style=color:#ae81ff>100</span>);
+ButtonDebounce <span style=color:#a6e22e>exitAlcoOn</span>(ExitAlcoOn, <span style=color:#ae81ff>100</span>);
+
+<span style=color:#75715e>//ButtonDebounce turnReady(TurnReady, 100);
+</span><span style=color:#75715e></span>
+<span style=color:#75715e>//unsigned long previousMillis = 0;
+</span><span style=color:#75715e></span><span style=color:#66d9ef>unsigned</span> <span style=color:#66d9ef>long</span> currentMillis <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+<span style=color:#66d9ef>unsigned</span> <span style=color:#66d9ef>long</span> lastOpenEnter <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+<span style=color:#66d9ef>unsigned</span> <span style=color:#66d9ef>long</span> lastOpenExit <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+<span style=color:#66d9ef>unsigned</span> <span style=color:#66d9ef>long</span> lastOpenStreet <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+<span style=color:#66d9ef>unsigned</span> <span style=color:#66d9ef>long</span> lastOpenVorota <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+
+<span style=color:#66d9ef>int</span> cycles <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+<span style=color:#66d9ef>int</span> cycles_Enter <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+<span style=color:#66d9ef>int</span> cycles_Exit <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+
+<span style=color:#66d9ef>int</span> enterStage <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+<span style=color:#66d9ef>int</span> exitStage <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+<span style=color:#66d9ef>int</span> lastEnterEmp <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+<span style=color:#66d9ef>int</span> lastExitEmp <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+
+<span style=color:#66d9ef>bool</span> enterEnable;
+<span style=color:#66d9ef>bool</span> exitEnable;
+
+WIEGAND wg;
+
+<span style=color:#66d9ef>const</span> byte numChars <span style=color:#f92672>=</span> <span style=color:#ae81ff>16</span>;
+<span style=color:#66d9ef>char</span> receivedChars[numChars]; <span style=color:#75715e>// an array to store the received data
+</span><span style=color:#75715e></span>
+boolean newData <span style=color:#f92672>=</span> false;
+
+<span style=color:#66d9ef>char</span> taskPC[<span style=color:#ae81ff>3</span>] <span style=color:#f92672>=</span> {<span style=color:#ae81ff>0</span>};
+<span style=color:#66d9ef>int</span> dirPC <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+
+<span style=color:#66d9ef>char</span> recvChar;
+<span style=color:#66d9ef>char</span> endMarker <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;&gt;&#39;</span>;
+
+<span style=color:#66d9ef>void</span> <span style=color:#a6e22e>setup</span>() {
+  <span style=color:#75715e>//Serial begin
+</span><span style=color:#75715e></span>  Serial.begin(<span style=color:#ae81ff>9600</span>);
+  Serial.println(F(<span style=color:#e6db74>&#34;Fingerprints Alcometers Turnstile Controler v0.5a&#34;</span>));
+  Serial.println(F(<span style=color:#e6db74>&#34;start boot&#34;</span>));
+
+  <span style=color:#75715e>//Initialised output pins
+</span><span style=color:#75715e></span>  pinMode(EnterLedGo, OUTPUT); digitalWrite(EnterLedGo, LOW);
+  pinMode(TurnEnter, OUTPUT); digitalWrite(TurnEnter, LOW);
+  pinMode(EnterAlcoRun, OUTPUT); digitalWrite(EnterAlcoRun, LOW);
+  pinMode(ExitLedGo, OUTPUT); digitalWrite(ExitLedGo, LOW);
+  pinMode(TurnExit, OUTPUT); digitalWrite(TurnExit, LOW);
+  pinMode(ExitAlcoRun, OUTPUT); digitalWrite(ExitAlcoRun, LOW);
+  pinMode(AlcoAlarm, OUTPUT); digitalWrite(AlcoAlarm, LOW);
+  pinMode(DoorStreet, OUTPUT); digitalWrite(DoorStreet, LOW);
+  <span style=color:#75715e>//Watchdog enable
+</span><span style=color:#75715e></span>  <span style=color:#75715e>//wdt_enable(WDTO_8S);
+</span><span style=color:#75715e></span>
+  <span style=color:#75715e>//Wiegand reades config and start
+</span><span style=color:#75715e></span>
+  wg.D0PinA <span style=color:#f92672>=</span> <span style=color:#ae81ff>3</span>;
+  wg.D1PinA <span style=color:#f92672>=</span> <span style=color:#ae81ff>2</span>;
+  wg.D0PinB <span style=color:#f92672>=</span> <span style=color:#ae81ff>19</span>;
+  wg.D1PinB <span style=color:#f92672>=</span> <span style=color:#ae81ff>18</span>;
+
+  wg.begin(TRUE, TRUE);
+
+  <span style=color:#75715e>//DFPlayer-mini mp3 module config and start
+</span><span style=color:#75715e></span>  Serial3.begin(<span style=color:#ae81ff>9600</span>);
+  pinMode(busyDFpin, INPUT);
+  mp3_set_serial (Serial3);
+  mp3_set_volume (mp3volume);
+  delay(<span style=color:#ae81ff>250</span>);
+
+  <span style=color:#75715e>//Serial for Orange PI
+</span><span style=color:#75715e></span>  Serial2.begin(<span style=color:#ae81ff>9600</span>);
+
+  <span style=color:#75715e>//Start AlcoMeter Enter
+</span><span style=color:#75715e></span>  delay(<span style=color:#ae81ff>100</span>);
+  cycles <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+  enterAlcoOn.update();
+  delay(<span style=color:#ae81ff>100</span>);
+  <span style=color:#66d9ef>if</span> (enterAlcoOn.state() <span style=color:#f92672>==</span> <span style=color:#ae81ff>0</span>) {
+    AlcoOnOff(ON, ENTER);
+    delay(<span style=color:#ae81ff>100</span>);
+    enterAlcoOn.update();
+    delay(<span style=color:#ae81ff>100</span>);
+  }
+  enterAlcoRD.update();
+  delay(<span style=color:#ae81ff>100</span>);
+  <span style=color:#66d9ef>if</span> (enterAlcoOn.state() <span style=color:#f92672>==</span> <span style=color:#ae81ff>1</span>) {
+    <span style=color:#66d9ef>if</span> (enterAlcoRD.state() <span style=color:#f92672>==</span> <span style=color:#ae81ff>1</span>) cycles<span style=color:#f92672>++</span>;
+    <span style=color:#66d9ef>while</span> (enterAlcoRD.state() <span style=color:#f92672>==</span> <span style=color:#ae81ff>0</span> <span style=color:#f92672>&amp;&amp;</span> cycles <span style=color:#f92672>&lt;</span> AlcoWaitMaxTime <span style=color:#f92672>*</span> <span style=color:#ae81ff>10</span>)  {
+      enterAlcoRD.update();
+      delay(<span style=color:#ae81ff>100</span>);
+      cycles<span style=color:#f92672>++</span>;
+    }
+    <span style=color:#66d9ef>if</span> (cycles <span style=color:#f92672>&gt;</span> <span style=color:#ae81ff>0</span> <span style=color:#f92672>&amp;&amp;</span> cycles <span style=color:#f92672>&lt;</span> AlcoWaitMaxTime <span style=color:#f92672>*</span> <span style=color:#ae81ff>10</span> ) {
+      AlcoOnOff(OFF, ENTER);
+      delay(<span style=color:#ae81ff>100</span>);
+      enterAlcoRD.update();
+      enterAlcoOn.update();
+      delay(<span style=color:#ae81ff>100</span>);
+      <span style=color:#66d9ef>if</span> (enterAlcoOn.state() <span style=color:#f92672>==</span> <span style=color:#ae81ff>0</span> <span style=color:#f92672>&amp;&amp;</span> enterAlcoRD.state() <span style=color:#f92672>==</span> <span style=color:#ae81ff>0</span>) {
+        Serial.println(F(<span style=color:#e6db74>&#34;enable enter alco&#34;</span>));
+        enterEnable <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;<span style=color:#75715e>//= 1;
+</span><span style=color:#75715e></span>      }
+      <span style=color:#66d9ef>else</span> {
+        Serial.println(F(<span style=color:#e6db74>&#34;disable enter alco&#34;</span>));
+        enterEnable <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+      }
+    }
+    <span style=color:#66d9ef>else</span> {
+      Serial.println(F(<span style=color:#e6db74>&#34;disable enter alco&#34;</span>));
+      enterEnable <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+    }
+  }
+  <span style=color:#66d9ef>if</span> (enterEnable <span style=color:#f92672>==</span> <span style=color:#ae81ff>0</span>) { <span style=color:#75715e>//if error
+</span><span style=color:#75715e></span>    digitalWrite(EnterLedStop, HIGH); delay(<span style=color:#ae81ff>250</span>); digitalWrite(EnterLedStop, LOW); delay(<span style=color:#ae81ff>250</span>); digitalWrite(EnterLedStop, HIGH); delay(<span style=color:#ae81ff>250</span>); digitalWrite(EnterLedStop, LOW); delay(<span style=color:#ae81ff>250</span>); digitalWrite(EnterLedStop, HIGH); delay(<span style=color:#ae81ff>250</span>); digitalWrite(EnterLedStop, LOW);
+  }
+
+  <span style=color:#75715e>//Start AlcoMeter Exit
+</span><span style=color:#75715e></span>  delay(<span style=color:#ae81ff>100</span>);
+  cycles <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+  exitAlcoOn.update();
+  delay(<span style=color:#ae81ff>100</span>);
+  <span style=color:#66d9ef>if</span> (exitAlcoOn.state() <span style=color:#f92672>==</span> <span style=color:#ae81ff>0</span>) {
+    AlcoOnOff(ON, EXIT);
+    delay(<span style=color:#ae81ff>100</span>);
+    exitAlcoOn.update();
+    delay(<span style=color:#ae81ff>100</span>);
+  }
+  exitAlcoRD.update();
+  delay(<span style=color:#ae81ff>100</span>);
+  <span style=color:#66d9ef>if</span> (exitAlcoOn.state() <span style=color:#f92672>==</span> <span style=color:#ae81ff>1</span>) {
+    <span style=color:#66d9ef>if</span> (exitAlcoRD.state() <span style=color:#f92672>==</span> <span style=color:#ae81ff>1</span>) cycles<span style=color:#f92672>++</span>;
+    <span style=color:#66d9ef>while</span> (exitAlcoRD.state() <span style=color:#f92672>==</span> <span style=color:#ae81ff>0</span> <span style=color:#f92672>&amp;&amp;</span> cycles <span style=color:#f92672>&lt;</span> AlcoWaitMaxTime <span style=color:#f92672>*</span> <span style=color:#ae81ff>10</span>)  {
+      exitAlcoRD.update();
+      delay(<span style=color:#ae81ff>100</span>);
+      cycles<span style=color:#f92672>++</span>;
+    }
+    <span style=color:#66d9ef>if</span> (cycles <span style=color:#f92672>&gt;</span> <span style=color:#ae81ff>0</span> <span style=color:#f92672>&amp;&amp;</span> cycles <span style=color:#f92672>&lt;</span> AlcoWaitMaxTime <span style=color:#f92672>*</span> <span style=color:#ae81ff>10</span> ) {
+      AlcoOnOff(OFF, EXIT);
+      delay(<span style=color:#ae81ff>100</span>);
+      exitAlcoRD.update();
+      exitAlcoOn.update();
+      delay(<span style=color:#ae81ff>100</span>);
+      <span style=color:#66d9ef>if</span> (exitAlcoOn.state() <span style=color:#f92672>==</span> <span style=color:#ae81ff>0</span> <span style=color:#f92672>&amp;&amp;</span> exitAlcoRD.state() <span style=color:#f92672>==</span> <span style=color:#ae81ff>0</span>) {
+        Serial.println(F(<span style=color:#e6db74>&#34;enable exit alco&#34;</span>));
+        exitEnable <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;<span style=color:#75715e>//= 1;
+</span><span style=color:#75715e></span>      }
+      <span style=color:#66d9ef>else</span> {
+        Serial.println(F(<span style=color:#e6db74>&#34;disable exit alco&#34;</span>));
+        exitEnable <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+      }
+    }
+    <span style=color:#66d9ef>else</span> {
+      Serial.println(F(<span style=color:#e6db74>&#34;disable exit alco&#34;</span>));
+      exitEnable <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+    }
+  }
+  <span style=color:#66d9ef>if</span> (exitEnable <span style=color:#f92672>==</span> <span style=color:#ae81ff>0</span>) { <span style=color:#75715e>//if error
+</span><span style=color:#75715e></span>    digitalWrite(ExitLedStop, HIGH); delay(<span style=color:#ae81ff>250</span>); digitalWrite(ExitLedStop, LOW); delay(<span style=color:#ae81ff>250</span>); digitalWrite(ExitLedStop, HIGH); delay(<span style=color:#ae81ff>250</span>); digitalWrite(ExitLedStop, LOW); delay(<span style=color:#ae81ff>250</span>); digitalWrite(ExitLedStop, HIGH); delay(<span style=color:#ae81ff>250</span>); digitalWrite(ExitLedStop, LOW);
+  }
+  Serial.println(F(<span style=color:#e6db74>&#34;boot finish&#34;</span>));
+  cycles <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+}
+
+<span style=color:#66d9ef>void</span> <span style=color:#a6e22e>loop</span>() {
+  currentMillis <span style=color:#f92672>=</span> millis();
+  wiegandCheck();
+  checkEnter();
+  checkExit();
+  checkLocks();
+  recvWithEndMarker();
+}
+
+<span style=color:#66d9ef>void</span> <span style=color:#a6e22e>wiegandCheck</span>() {
+  <span style=color:#66d9ef>if</span> (wg.available())
+  {
+    Serial.print(F(<span style=color:#e6db74>&#34;s| Emp = &#34;</span>)); Serial.print(wg.getCode()); Serial.print(F(<span style=color:#e6db74>&#34; gate = &#34;</span>)); Serial.println(wg.getGateActive());
+    <span style=color:#66d9ef>if</span> (wg.getGateActive() <span style=color:#f92672>==</span> <span style=color:#ae81ff>1</span>) {
+      lastEnterEmp <span style=color:#f92672>=</span> wg.getCode();
+    }
+    <span style=color:#66d9ef>if</span> (wg.getGateActive() <span style=color:#f92672>==</span> <span style=color:#ae81ff>2</span>)
+    {
+      lastExitEmp <span style=color:#f92672>=</span> wg.getCode();
+    }
+  }
+}
+
+<span style=color:#66d9ef>void</span> <span style=color:#a6e22e>checkEnter</span>() {
+  enterZK.update();
+  <span style=color:#66d9ef>switch</span> (enterStage) {
+    <span style=color:#66d9ef>case</span> <span style=color:#ae81ff>0</span><span style=color:#f92672>:</span>
+      <span style=color:#66d9ef>if</span> (enterZK.state() <span style=color:#f92672>==</span> LOW <span style=color:#f92672>&amp;&amp;</span> lastEnterEmp <span style=color:#f92672>!=</span> <span style=color:#ae81ff>0</span>) {
+        enterStage <span style=color:#f92672>=</span> <span style=color:#ae81ff>1</span>;
+        printStage(ENTER);
+        <span style=color:#66d9ef>if</span> (enterEnable <span style=color:#f92672>==</span> <span style=color:#ae81ff>1</span>) {
+          digitalWrite(EnterLedGo, HIGH);
+          mp3_play (soundAlcoHowTo); delay(<span style=color:#ae81ff>250</span>);
+          AlcoOnOff(ON, ENTER);
+        }
+        <span style=color:#66d9ef>else</span> {
+          mp3_play (soundEnterOK); delay(<span style=color:#ae81ff>250</span>);
+          enterStage <span style=color:#f92672>=</span> <span style=color:#ae81ff>5</span>;
+          delay(<span style=color:#ae81ff>100</span>);
+          printStage(ENTER);
+          digitalWrite(TurnEnter, HIGH); lastOpenEnter <span style=color:#f92672>=</span> currentMillis;
+          Serial.println(F(<span style=color:#e6db74>&#34;s| Turn Enter On&#34;</span>));
+        }
+      }
+      <span style=color:#66d9ef>break</span>;
+    <span style=color:#66d9ef>case</span> <span style=color:#ae81ff>1</span><span style=color:#f92672>:</span>
+    <span style=color:#66d9ef>case</span> <span style=color:#ae81ff>3</span><span style=color:#f92672>:</span>
+      enterAlcoOn.update();
+      enterAlcoOK.update();
+      enterAlcoAL.update();
+      delay(<span style=color:#ae81ff>100</span>);
+      <span style=color:#66d9ef>if</span> (enterAlcoOK.state() <span style=color:#f92672>==</span> HIGH <span style=color:#f92672>&amp;&amp;</span> enterAlcoAL.state() <span style=color:#f92672>==</span> HIGH <span style=color:#f92672>&amp;&amp;</span> cycles_Enter <span style=color:#f92672>&lt;</span> ResetStageTime <span style=color:#f92672>*</span> <span style=color:#ae81ff>10</span> ) {
+        delay(<span style=color:#ae81ff>100</span>);
+        cycles_Enter<span style=color:#f92672>++</span>;
+      }
+      <span style=color:#66d9ef>else</span> <span style=color:#66d9ef>if</span> (enterAlcoOK.state() <span style=color:#f92672>==</span> LOW) {
+        cycles_Enter <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+        mp3_play (soundEnterOK); delay(<span style=color:#ae81ff>250</span>);
+        enterStage <span style=color:#f92672>=</span> <span style=color:#ae81ff>5</span>;
+        printStage(ENTER);
+        digitalWrite(TurnEnter, HIGH); lastOpenEnter <span style=color:#f92672>=</span> currentMillis;
+        Serial.println(F(<span style=color:#e6db74>&#34;s| Turn Enter On&#34;</span>));
+        <span style=color:#66d9ef>while</span> (enterAlcoOK.state() <span style=color:#f92672>==</span> LOW) {
+          enterAlcoOK.update();
+          delay(<span style=color:#ae81ff>100</span>);
+        }
+      }
+      <span style=color:#66d9ef>else</span> <span style=color:#66d9ef>if</span> (enterAlcoAL.state() <span style=color:#f92672>==</span> LOW) {
+        cycles_Enter <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+        mp3_play (soundError); delay(<span style=color:#ae81ff>250</span>);
+        digitalWrite(EnterLedStop, HIGH);
+
+        <span style=color:#66d9ef>while</span> (digitalRead(busyDFpin) <span style=color:#f92672>==</span> LOW) {
+          delay(<span style=color:#ae81ff>100</span>);
+        }
+        digitalWrite(EnterLedStop, LOW);
+        <span style=color:#75715e>//enterStage = enterStage + 1;//вторая попытка
+</span><span style=color:#75715e></span>        enterStage <span style=color:#f92672>=</span> <span style=color:#ae81ff>4</span>; <span style=color:#75715e>//переходим сразу к сообщению об алкоголизме enterStage = 4; //переходим сразу к сообщению об алкоголизме
+</span><span style=color:#75715e></span>        <span style=color:#66d9ef>if</span> (enterStage <span style=color:#f92672>==</span> <span style=color:#ae81ff>4</span>) printStage(ENTER);
+        <span style=color:#66d9ef>while</span> (enterAlcoAL.state() <span style=color:#f92672>==</span> LOW) {
+          enterAlcoAL.update();
+          delay(<span style=color:#ae81ff>100</span>);
+        }
+      }
+      <span style=color:#66d9ef>else</span> <span style=color:#66d9ef>if</span> (cycles_Enter <span style=color:#f92672>&gt;=</span> ResetStageTime <span style=color:#f92672>*</span> <span style=color:#ae81ff>10</span>) {
+        cycles_Enter <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+        Serial.println(<span style=color:#e6db74>&#34;s| time out while enter alco test&#34;</span>);
+        mp3_play (soundError); delay(<span style=color:#ae81ff>250</span>);
+        <span style=color:#66d9ef>while</span> (digitalRead(busyDFpin) <span style=color:#f92672>==</span> LOW) {
+          delay(<span style=color:#ae81ff>100</span>);
+        }
+        mp3_play (soundStartAgain); delay(<span style=color:#ae81ff>250</span>);
+        enterStage <span style=color:#f92672>=</span> <span style=color:#ae81ff>5</span>;
+      }
+      <span style=color:#66d9ef>break</span>;
+    <span style=color:#66d9ef>case</span> <span style=color:#ae81ff>2</span><span style=color:#f92672>:</span>
+      mp3_play (soundNextTry); delay(<span style=color:#ae81ff>250</span>);
+      enterStage <span style=color:#f92672>=</span> <span style=color:#ae81ff>3</span>;
+      printStage(ENTER);
+      <span style=color:#66d9ef>break</span>;
+    <span style=color:#66d9ef>case</span> <span style=color:#ae81ff>4</span><span style=color:#f92672>:</span>
+      digitalWrite(EnterLedStop, HIGH);
+      digitalWrite(AlcoAlarm, HIGH); delay(AlarmOnTime); digitalWrite(AlcoAlarm, LOW);
+      mp3_play (soundEnterAlarm); delay(<span style=color:#ae81ff>250</span>);
+      enterStage <span style=color:#f92672>=</span> <span style=color:#ae81ff>5</span>;
+      <span style=color:#66d9ef>break</span>;
+    <span style=color:#66d9ef>case</span> <span style=color:#ae81ff>5</span><span style=color:#f92672>:</span>
+      enterStage <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+      lastEnterEmp <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+      <span style=color:#66d9ef>if</span> (enterEnable <span style=color:#f92672>==</span> <span style=color:#ae81ff>1</span>) {
+        digitalWrite(EnterLedGo, LOW);
+        digitalWrite(EnterLedStop, LOW);
+        AlcoOnOff(OFF, ENTER);
+      }
+      Serial.println(F(<span style=color:#e6db74>&#34;s| finish entering&#34;</span>));
+      <span style=color:#66d9ef>break</span>;
+  }
+}
+
+<span style=color:#66d9ef>void</span> <span style=color:#a6e22e>checkExit</span>() {
+  exitZK.update();
+  <span style=color:#66d9ef>switch</span> (exitStage) {
+    <span style=color:#66d9ef>case</span> <span style=color:#ae81ff>0</span><span style=color:#f92672>:</span>
+      <span style=color:#66d9ef>if</span> (exitZK.state() <span style=color:#f92672>==</span> LOW <span style=color:#f92672>&amp;&amp;</span> lastExitEmp <span style=color:#f92672>!=</span> <span style=color:#ae81ff>0</span>) {
+        exitStage <span style=color:#f92672>=</span> <span style=color:#ae81ff>1</span>;
+        printStage(EXIT);
+        <span style=color:#66d9ef>if</span> (exitEnable <span style=color:#f92672>==</span> <span style=color:#ae81ff>1</span>) {
+          digitalWrite(ExitLedGo, HIGH);
+          mp3_play (soundAlcoHowTo); delay(<span style=color:#ae81ff>250</span>);
+          AlcoOnOff(ON, EXIT);
+        }
+        <span style=color:#66d9ef>else</span> {
+          mp3_play (soundExitOK); delay(<span style=color:#ae81ff>250</span>);
+          exitStage <span style=color:#f92672>=</span> <span style=color:#ae81ff>5</span>;
+          delay(<span style=color:#ae81ff>100</span>);
+          printStage(EXIT);
+          digitalWrite(TurnExit, HIGH); lastOpenExit <span style=color:#f92672>=</span> currentMillis;
+          Serial.println(F(<span style=color:#e6db74>&#34;s| Turn Exit On&#34;</span>));
+        }
+      }
+      <span style=color:#66d9ef>break</span>;
+    <span style=color:#66d9ef>case</span> <span style=color:#ae81ff>1</span><span style=color:#f92672>:</span>
+    <span style=color:#66d9ef>case</span> <span style=color:#ae81ff>3</span><span style=color:#f92672>:</span>
+      <span style=color:#75715e>// Serial.println(&#34;s| case 1 3&#34;);
+</span><span style=color:#75715e></span>      exitAlcoOn.update();
+      exitAlcoOK.update();
+      exitAlcoAL.update();
+      delay(<span style=color:#ae81ff>100</span>);
+      <span style=color:#66d9ef>if</span> (exitAlcoOK.state() <span style=color:#f92672>==</span> HIGH <span style=color:#f92672>&amp;&amp;</span> exitAlcoAL.state() <span style=color:#f92672>==</span> HIGH <span style=color:#f92672>&amp;&amp;</span> cycles_Exit <span style=color:#f92672>&lt;</span> ResetStageTime <span style=color:#f92672>*</span> <span style=color:#ae81ff>10</span> ) {
+        delay(<span style=color:#ae81ff>100</span>);
+        cycles_Exit<span style=color:#f92672>++</span>;
+      }
+      <span style=color:#66d9ef>else</span> <span style=color:#66d9ef>if</span> (exitAlcoOK.state() <span style=color:#f92672>==</span> LOW) {
+        cycles_Exit <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+        mp3_play (soundExitOK); delay(<span style=color:#ae81ff>250</span>);
+        exitStage <span style=color:#f92672>=</span> <span style=color:#ae81ff>5</span>;
+        printStage(EXIT);
+        digitalWrite(TurnExit, HIGH); lastOpenExit <span style=color:#f92672>=</span> currentMillis;
+        Serial.println(F(<span style=color:#e6db74>&#34;s| Turn Exit On&#34;</span>));
+        <span style=color:#66d9ef>while</span> (exitAlcoOK.state() <span style=color:#f92672>==</span> LOW) {
+          exitAlcoOK.update();
+          delay(<span style=color:#ae81ff>100</span>);
+        }
+      }
+      <span style=color:#66d9ef>else</span> <span style=color:#66d9ef>if</span> (exitAlcoAL.state() <span style=color:#f92672>==</span> LOW) {
+        cycles_Exit <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+        mp3_play (soundError); delay(<span style=color:#ae81ff>250</span>);
+        digitalWrite(ExitLedStop, HIGH);
+        <span style=color:#66d9ef>while</span> (digitalRead(busyDFpin) <span style=color:#f92672>==</span> LOW) {
+          delay(<span style=color:#ae81ff>100</span>);
+        }
+        digitalWrite(ExitLedStop, LOW);
+        <span style=color:#75715e>//exitStage = exitStage + 1;//вторая попытка
+</span><span style=color:#75715e></span>        exitStage <span style=color:#f92672>=</span> <span style=color:#ae81ff>4</span>; <span style=color:#75715e>//переходим сразу к сообщению об алкоголизме
+</span><span style=color:#75715e></span>        <span style=color:#66d9ef>if</span> (exitStage <span style=color:#f92672>==</span> <span style=color:#ae81ff>4</span>) printStage(EXIT);
+        <span style=color:#66d9ef>while</span> (exitAlcoAL.state() <span style=color:#f92672>==</span> LOW) {
+          exitAlcoAL.update();
+          delay(<span style=color:#ae81ff>100</span>);
+        }
+      }
+      <span style=color:#66d9ef>else</span> <span style=color:#66d9ef>if</span> (cycles_Exit <span style=color:#f92672>&gt;=</span> ResetStageTime <span style=color:#f92672>*</span> <span style=color:#ae81ff>10</span>) {
+        cycles_Exit <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+        Serial.println(<span style=color:#e6db74>&#34;s| time out while exit alco test&#34;</span>);
+        mp3_play (soundError); delay(<span style=color:#ae81ff>250</span>);
+        <span style=color:#66d9ef>while</span> (digitalRead(busyDFpin) <span style=color:#f92672>==</span> LOW) {
+          delay(<span style=color:#ae81ff>100</span>);
+        }
+        mp3_play (soundStartAgain); delay(<span style=color:#ae81ff>250</span>);
+        exitStage <span style=color:#f92672>=</span> <span style=color:#ae81ff>5</span>;
+      }
+      <span style=color:#66d9ef>break</span>;
+    <span style=color:#66d9ef>case</span> <span style=color:#ae81ff>2</span><span style=color:#f92672>:</span>
+      mp3_play (soundNextTry); delay(<span style=color:#ae81ff>250</span>);
+      exitStage <span style=color:#f92672>=</span> <span style=color:#ae81ff>3</span>;
+      printStage(EXIT);
+      <span style=color:#66d9ef>break</span>;
+    <span style=color:#66d9ef>case</span> <span style=color:#ae81ff>4</span><span style=color:#f92672>:</span>
+      digitalWrite(ExitLedStop, HIGH);
+      digitalWrite(AlcoAlarm, HIGH); delay(AlarmOnTime); digitalWrite(AlcoAlarm, LOW);
+      mp3_play (soundExitAlarm); delay(<span style=color:#ae81ff>250</span>);
+      exitStage <span style=color:#f92672>=</span> <span style=color:#ae81ff>5</span>;
+      <span style=color:#66d9ef>break</span>;
+    <span style=color:#66d9ef>case</span> <span style=color:#ae81ff>5</span><span style=color:#f92672>:</span>
+      exitStage <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+      lastExitEmp <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+      <span style=color:#66d9ef>if</span> (exitEnable <span style=color:#f92672>==</span> <span style=color:#ae81ff>1</span>) {
+        digitalWrite(ExitLedGo, LOW);
+        digitalWrite(ExitLedStop, LOW);
+        AlcoOnOff(OFF, EXIT);
+      }
+      Serial.println(F(<span style=color:#e6db74>&#34;s| finish exiting&#34;</span>));
+      <span style=color:#66d9ef>break</span>;
+  }
+}
+
+<span style=color:#66d9ef>void</span> <span style=color:#a6e22e>checkLocks</span>() {
+  <span style=color:#66d9ef>if</span> (lastOpenEnter <span style=color:#f92672>!=</span> <span style=color:#ae81ff>0</span> <span style=color:#f92672>&amp;&amp;</span> (currentMillis <span style=color:#f92672>-</span> lastOpenEnter) <span style=color:#f92672>&gt;=</span> LockOpenTime) {
+    digitalWrite(TurnEnter, LOW);
+    lastOpenEnter <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+    Serial.println(F(<span style=color:#e6db74>&#34;s| Turn Enter Off&#34;</span>));
+  }
+  <span style=color:#66d9ef>if</span> (lastOpenExit <span style=color:#f92672>!=</span> <span style=color:#ae81ff>0</span> <span style=color:#f92672>&amp;&amp;</span> (currentMillis <span style=color:#f92672>-</span> lastOpenExit) <span style=color:#f92672>&gt;=</span> LockOpenTime) {
+    digitalWrite(TurnExit, LOW);
+    lastOpenExit <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+    Serial.println(F(<span style=color:#e6db74>&#34;s| Turn Exit Off&#34;</span>));
+  }
+  <span style=color:#66d9ef>if</span> (lastOpenStreet <span style=color:#f92672>!=</span> <span style=color:#ae81ff>0</span> <span style=color:#f92672>&amp;&amp;</span> (currentMillis <span style=color:#f92672>-</span> lastOpenStreet) <span style=color:#f92672>&gt;=</span> LockOpenTime) {
+    digitalWrite(DoorStreet, LOW);
+    lastOpenStreet <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+    Serial.println(F(<span style=color:#e6db74>&#34;s| Turn Street Off&#34;</span>));
+  }
+  <span style=color:#66d9ef>if</span> (lastOpenVorota <span style=color:#f92672>!=</span> <span style=color:#ae81ff>0</span> <span style=color:#f92672>&amp;&amp;</span> (currentMillis <span style=color:#f92672>-</span> lastOpenVorota) <span style=color:#f92672>&gt;=</span> LockOpenTime) {
+    digitalWrite(Vorota, LOW);
+    lastOpenVorota <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+    Serial.println(F(<span style=color:#e6db74>&#34;s| Turn Vorota Off&#34;</span>));
+  }
+}
+
+<span style=color:#66d9ef>void</span> <span style=color:#a6e22e>AlcoOnOff</span>(<span style=color:#66d9ef>int</span> State, <span style=color:#66d9ef>int</span> Gate) {
+  <span style=color:#66d9ef>if</span> (Gate <span style=color:#f92672>==</span> ENTER) {
+    enterAlcoOn.update();
+    delay(<span style=color:#ae81ff>100</span>);
+    <span style=color:#66d9ef>if</span> (enterAlcoOn.state() <span style=color:#f92672>!=</span> State) {
+      digitalWrite(EnterAlcoRun, HIGH); delay(AlcoStartTime); digitalWrite(EnterAlcoRun, LOW);
+      <span style=color:#66d9ef>if</span> (State <span style=color:#f92672>==</span> <span style=color:#ae81ff>0</span>) Serial.println(F(<span style=color:#e6db74>&#34;s| Alco Enter Off&#34;</span>));
+      <span style=color:#66d9ef>if</span> (State <span style=color:#f92672>==</span> <span style=color:#ae81ff>1</span>) Serial.println(F(<span style=color:#e6db74>&#34;s| Alco Enter On&#34;</span>));
+    }
+  }
+  <span style=color:#66d9ef>if</span> (Gate <span style=color:#f92672>==</span> EXIT) {
+    exitAlcoOn.update();
+    delay(<span style=color:#ae81ff>100</span>);
+    <span style=color:#66d9ef>if</span> (exitAlcoOn.state() <span style=color:#f92672>!=</span> State) {
+      digitalWrite(ExitAlcoRun, HIGH); delay(AlcoStartTime); digitalWrite(ExitAlcoRun, LOW);
+      <span style=color:#66d9ef>if</span> (State <span style=color:#f92672>==</span> <span style=color:#ae81ff>0</span>) Serial.println(F(<span style=color:#e6db74>&#34;s| Alco Exit Off&#34;</span>));
+      <span style=color:#66d9ef>if</span> (State <span style=color:#f92672>==</span> <span style=color:#ae81ff>1</span>) Serial.println(F(<span style=color:#e6db74>&#34;s| Alco Exit On&#34;</span>));
+    }
+  }
+}
+
+
+<span style=color:#66d9ef>void</span> <span style=color:#a6e22e>printStage</span>(<span style=color:#66d9ef>int</span> Gate) {
+  <span style=color:#66d9ef>if</span> (Gate <span style=color:#f92672>==</span> ENTER) {
+    Serial2.print(F(<span style=color:#e6db74>&#34;ENTER|&#34;</span>)); Serial2.print(lastEnterEmp); Serial2.print(F(<span style=color:#e6db74>&#34;|&#34;</span>)); Serial2.println(enterStage);
+  }
+  <span style=color:#66d9ef>if</span> (Gate <span style=color:#f92672>==</span> EXIT) {
+    Serial2.print(F(<span style=color:#e6db74>&#34;EXIT|&#34;</span>)); Serial2.print(lastExitEmp); Serial2.print(F(<span style=color:#e6db74>&#34;|&#34;</span>)); Serial2.println(exitStage);
+  }
+}
+
+<span style=color:#66d9ef>void</span> <span style=color:#a6e22e>recvWithEndMarker</span>() {
+  <span style=color:#66d9ef>static</span> byte ndx <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+  <span style=color:#66d9ef>char</span> endMarker <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;\n&#39;</span>;
+  <span style=color:#66d9ef>char</span> rc;
+
+  <span style=color:#66d9ef>while</span> (Serial2.available() <span style=color:#f92672>&gt;</span> <span style=color:#ae81ff>0</span> <span style=color:#f92672>&amp;&amp;</span> newData <span style=color:#f92672>==</span> false) {
+    rc <span style=color:#f92672>=</span> Serial2.read();
+
+    <span style=color:#66d9ef>if</span> (rc <span style=color:#f92672>!=</span> endMarker) {
+      receivedChars[ndx] <span style=color:#f92672>=</span> rc;
+      ndx<span style=color:#f92672>++</span>;
+      <span style=color:#66d9ef>if</span> (ndx <span style=color:#f92672>&gt;=</span> numChars) {
+        ndx <span style=color:#f92672>=</span> numChars <span style=color:#f92672>-</span> <span style=color:#ae81ff>1</span>;
+      }
+    }
+    <span style=color:#66d9ef>else</span> {
+      receivedChars[ndx] <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;\0&#39;</span>; <span style=color:#75715e>// terminate the string
+</span><span style=color:#75715e></span>      ndx <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+      newData <span style=color:#f92672>=</span> true;
+      parseData();
+    }
+  }
+}
+
+<span style=color:#66d9ef>void</span> <span style=color:#a6e22e>parseData</span>() {
+  <span style=color:#66d9ef>char</span> <span style=color:#f92672>*</span> strtokIndx; <span style=color:#75715e>// this is used by strtok() as an index
+</span><span style=color:#75715e></span>
+  strtokIndx <span style=color:#f92672>=</span> strtok(receivedChars, <span style=color:#e6db74>&#34;|&#34;</span>); <span style=color:#75715e>// get the first part - the string
+</span><span style=color:#75715e></span>  strcpy(taskPC, strtokIndx); <span style=color:#75715e>// copy it to taskPC
+</span><span style=color:#75715e></span>  Serial.println(taskPC);
+  strtokIndx <span style=color:#f92672>=</span> strtok(NULL, <span style=color:#e6db74>&#34;|&#34;</span>); <span style=color:#75715e>// this continues where the previous call left off
+</span><span style=color:#75715e></span>  dirPC <span style=color:#f92672>=</span> atoi(strtokIndx); <span style=color:#75715e>// convert this part to an integer
+</span><span style=color:#75715e></span>  Serial.println(dirPC);
+  showParsedData();
+}
+
+
+<span style=color:#66d9ef>void</span> <span style=color:#a6e22e>showParsedData</span>() {
+  <span style=color:#66d9ef>if</span> (taskPC[<span style=color:#ae81ff>0</span>] <span style=color:#f92672>==</span> <span style=color:#e6db74>&#39;O&#39;</span>) {
+    <span style=color:#66d9ef>switch</span> (dirPC) {
+      <span style=color:#66d9ef>case</span> <span style=color:#ae81ff>1</span><span style=color:#f92672>:</span>
+        {
+          digitalWrite(TurnEnter, HIGH); lastOpenEnter <span style=color:#f92672>=</span> currentMillis;
+          mp3_play (soundGo); delay(<span style=color:#ae81ff>250</span>);
+          Serial.println(F(<span style=color:#e6db74>&#34;s| Turn Enter On&#34;</span>));
+          enterStage <span style=color:#f92672>=</span> <span style=color:#ae81ff>5</span>;
+          <span style=color:#66d9ef>break</span>;
+        }
+      <span style=color:#66d9ef>case</span> <span style=color:#ae81ff>2</span><span style=color:#f92672>:</span>
+        {
+          digitalWrite(TurnExit, HIGH); lastOpenExit <span style=color:#f92672>=</span> currentMillis;
+          mp3_play (soundGo); delay(<span style=color:#ae81ff>250</span>);
+          Serial.println(F(<span style=color:#e6db74>&#34;s| Turn Exit On&#34;</span>));
+          exitStage <span style=color:#f92672>=</span> <span style=color:#ae81ff>5</span>;
+          <span style=color:#66d9ef>break</span>;
+        }
+      <span style=color:#66d9ef>case</span> <span style=color:#ae81ff>3</span><span style=color:#f92672>:</span>
+        {
+          digitalWrite(DoorStreet, HIGH); lastOpenStreet <span style=color:#f92672>=</span> currentMillis;
+          Serial.println(F(<span style=color:#e6db74>&#34;s| Turn Street On&#34;</span>));
+          <span style=color:#66d9ef>break</span>;
+        }
+      <span style=color:#66d9ef>case</span> <span style=color:#ae81ff>4</span><span style=color:#f92672>:</span>
+        {
+          digitalWrite(Vorota, HIGH); lastOpenVorota <span style=color:#f92672>=</span> currentMillis;
+          Serial.println(F(<span style=color:#e6db74>&#34;s| Turn Vorota On&#34;</span>));
+          <span style=color:#66d9ef>break</span>;
+        }
+    }
+  }
+  newData <span style=color:#f92672>=</span> false;
+}</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+</figure>
+</div>
+<div class=post-footer>
+</div>
+</article>
+</main>
+<script src=https://code.jquery.com/jquery-1.12.4.min.js integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin=anonymous></script>
+<script src=../../js/load-photoswipe.js></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin=anonymous></script>
+<script>feather.replace()</script>
+</body>
+</html>
