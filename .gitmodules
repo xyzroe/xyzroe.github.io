@@ -1,0 +1,9 @@
+[submodule "projects/Lumi-Router-JN5169"]
+	path = projects/Lumi-Router-JN5169
+	url = https://github.com/xyzroe/Lumi-Router-JN5169
+[submodule "projects/cups-airprint-epson-tm"]
+	path = projects/cups-airprint-epson-tm
+	url = https://github.com/xyzroe/cups-airprint-epson-tm
+[submodule "projects/oko2mqtt"]
+	path = projects/oko2mqtt
+	url = https://github.com/xyzroe/oko2mtt
