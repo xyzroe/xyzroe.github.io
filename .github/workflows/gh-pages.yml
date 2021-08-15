@@ -37,7 +37,7 @@ jobs:
           # The Hugo version to download (if necessary) and use. Example: 0.58.2
           hugo-version: # optional, default is latest
           # Download (if necessary) and use Hugo extended version. Example: true
-          extended: # optional, default is false
+          extended: true
       - name: Build
         env:
           HUGO_ENV: production
