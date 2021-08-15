@@ -6,6 +6,8 @@ languageCode = "en-us"
 theme = "m10c"
 paginate = 10
 title = "xyzroe's blog"
+googleAnalytics = "UA-28039606-3"
+enableRobotsTXT = true
 
 staticDir = ["static", "projects/Lumi-Router-JN5169"]
 
