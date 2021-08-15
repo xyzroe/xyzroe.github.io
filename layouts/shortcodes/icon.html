@@ -1,0 +1,22 @@
+{{ $icon := .Get "icon" | safeHTMLAttr }}
+{{ $linkClass := .Get "linkClass" | safeHTMLAttr }}
+{{ $stroke_width := .Get "stroke_width" | safeHTMLAttr }}
+{{ $width := .Get "width" }}
+{{ $height := .Get "height" }}
+{{ $color := .Get "color" | safeHTMLAttr }}
+{{ $link := .Get "link" }}
+{{ $addStyle := .Get "style" | safeCSS }}
+{{ $top := .Get "top" }}
+
+
+
+{{ with $link}}
+<a href="{{ . }}" class="{{ $linkClass }}" target="_blank">
+{{ end }}
+
+  <i data-feather="{{ $icon }}" stroke-width="{{ with .Get "stroke_width" }}{{ . }}{{ else }}2{{ end }}" width="{{ with .Get "width" }}{{ . }}{{ else }}32{{ end }}" height="{{ with .Get "height" }}{{ . }}{{ else }}32{{ end }}" color="{{ $color }}" style="position: relative; top: {{ with .Get "top" }}{{ . }}{{ else }}10{{ end }}px;"></i>
+
+{{ with $link}}
+  <span class="screen-reader-text">{{ $linkClass }}</span>
+</a>
+{{ end }}

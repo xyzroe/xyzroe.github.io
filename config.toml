@@ -1,0 +1,56 @@
+baseURL = "http://xyzroe.cc/"
+languageCode = "en-us"
+theme = "m10c"
+paginate = 10
+title = "xyzroe's blog"
+
+staticDir = ["static", "projects/Lumi-Router-JN5169"]
+
+
+[sitemap]
+changefreq = "monthly"
+priority = 0.5
+filename = "sitemap.xml"
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 2
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 3
+
+[params]
+  author = "xyzroe"
+  description = "Technical automation, project management, analytics and process optimization"
+
+  avatar = "img/avatar.png"#"https://avatars.githubusercontent.com/u/6440415"
+  menu_item_separator = " - "
+  [[params.social]]
+    icon = "send"
+    name = "Telergam"
+    url = "https://t.me/xyzroe"
+  [[params.social]]
+    icon = "at-sign"
+    name = "Email"
+    url = "mailto:z@mind.in.ua"
+  [[params.social]]
+    icon = "github"
+    name = "Github"
+    url = "https://github.com/xyzroe"
+
+[params.style]
+  darkestColor = "#242930"
+  darkColor = "#353b43"
+  lightColor = "#bdbdbd"
+  lightestColor = "#fcba47"
+  primaryColor = "#ffa200"
