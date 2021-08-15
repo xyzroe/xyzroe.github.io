@@ -1,6 +1,6 @@
 ---
 title: "My example Post"
-date: 2010-01-01
+date: 2001-01-01
 draft: true
 tags: ["example"]
 ---
