@@ -2,4 +2,5 @@
 2 controllers ZK MA300
 2 alcotesters Alcofor S40
 1 speaker and LED unit with voice prompts and mode indication
-1 orange pi with python utility for displaying photos and status of passing through the turnstile and writing to the database</description></item></channel></rss>
+1 orange pi with python utility for displaying photos and status of passing through the turnstile and writing to the database
+order of actions: authorization to ZK - alcohol test - in case of an error again - in case of an error, again record the violation and refusal to work (or notification of dismissal, but with permission to exit) - record a successful passage and farewell.</description></item></channel></rss>
