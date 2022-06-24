@@ -15,11 +15,16 @@
     {{ template "_internal/twitter_cards.html" . }}
     {{ template "_internal/opengraph.html" . }}
 
-     <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <link rel="stylesheet" href="/css/google-translate.css">
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script src="/js/google-translate.js"></script>
 
   </head>
   <body>
     <header class="app-header">
+      <div class="notranslate">
       <a href="{{ .Site.BaseURL }}"><img class="app-header-avatar" src="{{ .Site.Params.avatar | default "avatar.jpg" | relURL }}" alt="{{ .Site.Params.author | default "John Doe" }}" /></a>
       <h1> </h1>
       {{- with .Site.Menus.main }}
@@ -48,6 +53,23 @@
       <div class="app-footer">
       <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
         <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+      </div>
+
+      <div class="language">
+
+         <a href="#" alt="EN" data-google-lang="en" class="language__img">🇬🇧</a>
+         <a href="#" alt="UA" data-google-lang="uk" class="language__img">🇺🇦</a>
+         <a href="#" alt="PL" data-google-lang="pl" class="language__img">🇵🇱</a>
+         <a href="#" alt="IL" data-google-lang="iw" class="language__img">🇮🇱</a>
+         <a href="#" alt="DE" data-google-lang="de" class="language__img">🇩🇪</a>
+         <a href="#" alt="FR" data-google-lang="fr" class="language__img">🇫🇷</a>
+         <a href="#" alt="ES" data-google-lang="es" class="language__img">🇪🇸</a>
+         <a href="#" alt="IT" data-google-lang="it" class="language__img">🇮🇹</a>
+         <a href="#" alt="NL" data-google-lang="nl" class="language__img">🇳🇱</a>
+         <a href="#" alt="ZH" data-google-lang="zh-CN" class="language__img">🇨🇳</a>
+         <img src="/img/ru.png" alt="ru" data-google-lang="ru" class="language__img" height="10">
+      </div>
+
       </div>
     </header>
     <main class="app-container">

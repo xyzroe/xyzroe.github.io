@@ -7,15 +7,9 @@ tags: ["Zigbee", "domophone", "DIY"]
 {{< load-photoswipe >}}
 
 
-
-
+#### Board v2 available at [GitHub](https://github.com/diyruz/Zintercom/) {{<icon icon="github" link="https://github.com/diyruz/Zintercom/" stroke_width="2" width="24" height="24" >}}
 
 Today I want to share with you the history of the development of a device for controlling a multi-apartment intercom using the Zigbee protocol.
-
-
-
-
-
 
 Once upon a time I had an automatic doorphone opener based on: ESP8266, a module for two relays (16A) and a transistor with a strapping.
 
@@ -25,8 +19,6 @@ All this was collected on a bunch of wires and snot made of hot melt glue and lo
 {{< figure src="v1/phone.jpg" caption="My intercom phone" >}}
 {{< figure src="v1/esp.jpg" caption="Relay module and transistor in the socket behind the tube" >}}
 {{< /gallery >}}
-
-
 
 After organizing a Zigbee network at home, there was a desire to transfer as many devices as possible from to Zigbee in order to unload the Wi-Fi network (now there are 32 devices on Zigbee, and 20 devices on Wi-Fi).
 
@@ -108,7 +100,6 @@ Router or end device mode
 
 
 
-
 With battery (E18-MS1-PCB only):
 
 Interval for sending reports - 30 minutes
@@ -123,17 +114,4 @@ After all the tests, I installed the board in the intercom tube case:
 
 {{< figure src="v1/inside.jpg" width="35%" >}}
 
-Firmware, diagrams, Gerbers are open and are on the project's [Github repository](https://github.com/diyruz/Zintercom/) {{<icon icon="github" link="https://github.com/diyruz/Zintercom/" stroke_width="2" width="32" height="32" >}}  
-
-
-
-
-
-
-### V2
-
-#### Images
-{{< gallery dir="posts/zintercom/v2" />}}
-
-#### BOM
-{{< iframe "Zintercom_rev2.0.html" >}}
+Firmware, diagrams, Gerbers are open and are on the project's [Github repository](https://github.com/diyruz/Zintercom/) {{<icon icon="github" link="https://github.com/diyruz/Zintercom/" stroke_width="2" width="32" height="32" >}}

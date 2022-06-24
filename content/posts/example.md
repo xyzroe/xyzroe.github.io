@@ -36,6 +36,15 @@ print s
 
 
 
+### V2
+
+#### Images
+{{< gallery dir="posts/zintercom/v2" />}}
+
+#### BOM
+{{< iframe "Zintercom_rev2.0.html" >}}
+
+
 <dl>
   <dt>Definition list</dt>
   <dd>Is something people use sometimes.</dd>

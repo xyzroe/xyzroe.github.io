@@ -8,8 +8,9 @@ paginate = 10
 title = "xyzroe's blog"
 googleAnalytics = "UA-203059197-1"
 enableRobotsTXT = true
+custom_js = ["js/translate.js"]
 
-staticDir = ["static", "projects/Lumi-Router-JN5169"]
+staticDir = ["static", "projects"]
 
 
 [sitemap]
