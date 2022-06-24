@@ -1,6 +1,21 @@
 {{$file := .Get "file"}}
+
+{{$split := split $file "/"}}
+{{$folder := index $split 1}}
+
+{{$end := "/images"}}
+{{$start := "/"}}
+
+{{$new := printf "%s" $end | printf "%s%s" $folder | printf "%s" }}
+{{$new := printf "%s" $new | printf "%s%s" $start | printf "%s" }}
+
+{{$txt := $file | readFile }}
+
+{{$finish := replace $txt "/images" $new}}
+
 {{- if eq (.Get "markdown") "true" -}}
-{{- $file  | readFile | markdownify -}}
+
+{{$finish | markdownify }}
 {{- else -}}
-{{ $file  | readFile | safeHTML }}
+{{$finish | safeHTML }}
 {{- end -}}
