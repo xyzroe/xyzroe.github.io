@@ -8,7 +8,6 @@ paginate = 10
 title = "xyzroe's blog"
 googleAnalytics = "UA-203059197-1"
 enableRobotsTXT = true
-custom_js = ["js/translate.js"]
 
 staticDir = ["static", "projects"]
 
@@ -39,7 +38,7 @@ filename = "sitemap.xml"
   author = "xyzroe"
   description = "Technical automation, project management, analytics and process optimization"
 
-  avatar = "img/avatar.png"#"https://avatars.githubusercontent.com/u/6440415"
+  avatar = "img/avatar.png"
   menu_item_separator = " - "
   [[params.social]]
     icon = "send"
@@ -48,7 +47,7 @@ filename = "sitemap.xml"
   [[params.social]]
     icon = "at-sign"
     name = "Email"
-    url = "mailto:z@mind.in.ua"
+    url = "mailto:xyzroe@mind.in.ua"
   [[params.social]]
     icon = "github"
     name = "Github"
