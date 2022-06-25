@@ -47,3 +47,11 @@ body {
 .language__img_active {
     opacity: 1;
 }
+
+
+.logoUA {
+    position: fixed;
+    left: 75px;
+    bottom: 20px;
+    display: flex;
+}

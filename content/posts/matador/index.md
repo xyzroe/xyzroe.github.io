@@ -2,7 +2,7 @@
 title: "WP Matador recovery"
 date: 2015-09-30
 draft: false
-tags: ["oven", "equipment", "WP", "Matador"]
+tags: ["oven", "equipment", "WP", "Matador", "gaz"]
 ---
 {{< load-photoswipe >}}
 

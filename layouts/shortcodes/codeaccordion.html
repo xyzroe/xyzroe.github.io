@@ -1,0 +1,19 @@
+{{/* https://zwbetz.com/generate-a-random-string-in-hugo/  */}}
+{{ $seed := .Get "title" }}
+{{ $random := delimit (shuffle (split (md5 $seed) "" )) "" }}
+{{ $linkClass := .Get "linkClass" | safeHTMLAttr }}
+{{$file := .Get "file"}}
+{{$txt := $file | readFile | safeHTML}}
+
+
+	<div class="tab">
+		<input type="checkbox" id="chck{{$random}}" class="input_inv">
+		<label class="tab-label" for="chck{{$random}}">{{ .Get "title" }}
+		<a href="{{ $file }}" target="_blank" style="position: absolute; right: 80px;color:white;height:25px;">
+			<i data-feather="download" stroke-width="1.75" width="25" height="25" style="position: relative; right: -35%;"></i>
+		</a>
+		</label>
+		<div class="tab-content">
+			{{ highlight (trim $txt "\n\r") (.Get "lang") "linenos=false" }}
+		</div>
+	</div>
