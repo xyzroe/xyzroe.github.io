@@ -1,4 +1,0 @@
-config/*.json
-env
-src/__pycache__
-commit
