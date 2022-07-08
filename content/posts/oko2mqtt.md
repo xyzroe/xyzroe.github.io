@@ -20,8 +20,6 @@ There is a ready-made Docker image, but it can be launched as a separate applica
 [dockerhub: xyzroe/oko2mqtt](https://hub.docker.com/r/xyzroe/oko2mqtt)
 
 
-<!---{{< readfile file="projects/oko2mqtt/README.md" markdown="true" >}}--->
-
 If suddenly it is useful to someone, use it. :)
 If someone contributes their improvements / fixes - welcome to the PR on GitHub. 😉
 
