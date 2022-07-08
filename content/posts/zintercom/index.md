@@ -114,4 +114,4 @@ After all the tests, I installed the board in the intercom tube case:
 
 {{< figure src="v1/inside.jpg" width="35%" >}}
 
-Firmware, diagrams, Gerbers are open and are on the project's [Github repository](https://github.com/diyruz/Zintercom/) {{<icon icon="github" link="https://github.com/diyruz/Zintercom/" stroke_width="2" width="32" height="32" >}}
+Firmware, diagrams, Gerbers are open and are on the project's [Github repository](https://github.com/xyzroe/Zintercom/) {{<icon icon="github" link="https://github.com/xyzroe/Zintercom/" stroke_width="2" width="32" height="30" >}}

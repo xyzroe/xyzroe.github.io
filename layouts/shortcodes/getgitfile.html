@@ -1,0 +1,11 @@
+{{$repo := .Get "repo"}}
+{{$user := .Get "user"}}
+{{$file := .Get "file"}}
+
+{{ $json := getJSON "https://api.github.com/repos/" $user "/" $repo "/contents/" $file }}
+
+{{- if eq (.Get "markdown") "true" -}}
+{{ $json.content | base64Decode | markdownify }}
+{{- else -}}
+{{ $json.content | base64Decode | safeHTML }}
+{{- end -}}

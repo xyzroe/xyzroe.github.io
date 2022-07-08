@@ -8,4 +8,4 @@ tags: ["AirPrint", "Epson", "Docker", "Synology"]
 ![EPSON TM T20II](Epson-TM-T20II-POS.png)
 ![Apple AirPrint](Apple-AirPrint-new-logo.png)
 
-{{< readfile file="projects/cups-airprint-epson-tm/README.md" markdown="true" >}}
+{{< getgitfile user="xyzroe" repo="cups-airprint-epson-tm" file="README.md" markdown="true" >}}

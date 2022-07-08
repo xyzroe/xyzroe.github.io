@@ -27,6 +27,11 @@ filename = "sitemap.xml"
     identifier = "tags"
     name = "Tags"
     url = "/tags/"
+    weight = 4
+  [[menu.main]]
+    identifier = "links"
+    name = "Links"
+    url = "/links/"
     weight = 2
   [[menu.main]]
     identifier = "about"
@@ -36,7 +41,7 @@ filename = "sitemap.xml"
 
 [params]
   author = "xyzroe"
-  description = "Technical automation, project management, analytics and process optimization"
+  description = "Technical automation, some DIY stuff, little useful scripts, electronic devices development"
 
   avatar = "img/avatar.png"
   menu_item_separator = " - "

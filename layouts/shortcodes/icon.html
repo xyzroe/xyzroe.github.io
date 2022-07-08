@@ -11,7 +11,7 @@
 
 
 {{ with $link}}
-<a href="{{ . }}" class="{{ $linkClass }}" target="_blank">
+<a href="{{ . }}" class="{{ $linkClass }}" >
 {{ end }}
 
   <i data-feather="{{ $icon }}" stroke-width="{{ with .Get "stroke_width" }}{{ . }}{{ else }}2{{ end }}" width="{{ with .Get "width" }}{{ . }}{{ else }}32{{ end }}" height="{{ with .Get "height" }}{{ . }}{{ else }}32{{ end }}" color="{{ $color }}" style="position: relative; top: {{ with .Get "top" }}{{ . }}{{ else }}10{{ end }}px;"></i>
