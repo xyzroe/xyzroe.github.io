@@ -5,7 +5,7 @@
 {{ $json := getJSON "https://api.github.com/repos/" $user "/" $repo "/contents/" $file }}
 
 {{- if eq (.Get "markdown") "true" -}}
-{{ $json.content | base64Decode | markdownify }}
+{{ $json.content | base64Decode | safeHTML | markdownify }}
 {{- else -}}
 {{ $json.content | base64Decode | safeHTML }}
 {{- end -}}
