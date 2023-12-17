@@ -64,3 +64,6 @@ filename = "sitemap.xml"
   lightColor = "#bdbdbd"
   lightestColor = "#fcba47"
   primaryColor = "#ffa200"
+
+[markup.goldmark.renderer]
+  unsafe = true
