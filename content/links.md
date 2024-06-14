@@ -3,14 +3,12 @@ title: "Links"
 ---
 #### My projects:  
   - {{<icon icon="settings" stroke_width="2" width="20" height="32" >}} Hardware
-    - [ZigUNO](https://xyzroe.cc/ZigUNO)
+    - [XZG Firmware](https://xzg.xyzroe.cc)
   - {{<icon icon="book-open" stroke_width="2" width="20" height="32" >}} Information  
     - [Zig Dev Wiki](https://zigdevwiki.github.io/)
 
 
   <br><br><br>
-
-
 
 
 #### Other my resources  
