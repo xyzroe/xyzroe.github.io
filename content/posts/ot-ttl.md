@@ -5,4 +5,4 @@ draft: false
 tags: ["OpenTherm", "TTL", "DIY"]
 ---
 
-{{< getgitfile user="xyzroe" repo="OpenTherm-TTL-adapter" file="index.md" markdown="true" >}}
+Go to [OpenTherm - TTL](https://xyzroe.cc/OpenTherm-TTL-adapter/) page
