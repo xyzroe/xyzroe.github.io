@@ -6,3 +6,6 @@ tags: ["USB", "ESP32", "Zigbee", "DIY", "C6"]
 ---
 
 Go to [ZigUSB_C6](https://xyzroe.cc/ZigUSB_C6/) page
+
+
+<meta http-equiv="refresh" content="0; url=https://xyzroe.cc/ZigUSB_C6/" />
