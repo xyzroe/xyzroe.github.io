@@ -52,7 +52,7 @@ filename = "sitemap.xml"
   [[params.social]]
     icon = "at-sign"
     name = "Email"
-    url = "mailto:xyzroe@mind.in.ua"
+    url = "mailto:i@xyzroe.cc"
   [[params.social]]
     icon = "github"
     name = "Github"
