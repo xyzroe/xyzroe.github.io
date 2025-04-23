@@ -6,7 +6,7 @@ languageCode = "en-us"
 theme = "m10c"
 paginate = 10
 title = "xyzroe's blog"
-googleAnalytics = "UA-203059197-1"
+googleAnalytics = "G-5JP6L4L4DL"
 enableRobotsTXT = true
 
 staticDir = ["static", "projects"]
