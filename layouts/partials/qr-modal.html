@@ -1,0 +1,77 @@
+<!-- QR Code Modal -->
+<div id="qrModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 9999; align-items: center; justify-content: center;">
+    <div style="position: relative; max-width: 90%; max-height: 90vh; background: white; border-radius: 10px; padding: 2rem; overflow: auto;">
+        <button type="button" onclick="window.closeQRModal && window.closeQRModal()" style="position: absolute; top: 10px; right: 10px; background: #ff4444; color: white; border: none; border-radius: 50%; width: 30px; height: 30px; cursor: pointer; font-size: 18px; z-index: 10;">&times;</button>
+        <h2 id="qrTitle" style="text-align: center; margin-bottom: 1rem; color: #333;"></h2>
+        <div style="display: flex; justify-content: center; align-items: center; max-height: calc(90vh - 120px);">
+            <img id="qrImage" src="" alt="QR Code" style="max-width: 100%; max-height: calc(90vh - 120px); height: auto; width: auto; display: block; object-fit: contain;">
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+(function() {
+    'use strict';
+    
+    window.showQRModal = function(imageUrl, name) {
+        var modal = document.getElementById('qrModal');
+        var image = document.getElementById('qrImage');
+        var title = document.getElementById('qrTitle');
+        
+        if (modal && image && title) {
+            modal.style.display = 'flex';
+            image.src = imageUrl;
+            title.textContent = name;
+            document.body.style.overflow = 'hidden';
+        } else {
+            console.error('Modal elements not found:', {modal: !!modal, image: !!image, title: !!title});
+        }
+    };
+
+    window.closeQRModal = function() {
+        var modal = document.getElementById('qrModal');
+        if (modal) {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+    };
+
+    function initQRModal() {
+        var qrButtons = document.querySelectorAll('.qr-button');
+        
+        qrButtons.forEach(function(button, index) {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                var imageUrl = this.getAttribute('data-img');
+                var name = this.getAttribute('data-name');
+                window.showQRModal(imageUrl, name);
+                return false;
+            });
+        });
+        
+        var modal = document.getElementById('qrModal');
+        if (modal) {
+            modal.addEventListener('click', function(e) {
+                if (e.target === this) {
+                    window.closeQRModal();
+                }
+            });
+        }
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                window.closeQRModal();
+            }
+        });
+        
+    }
+
+    // Initialize after DOM is ready
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initQRModal);
+    } else {
+        setTimeout(initQRModal, 100);
+    }
+})();
+</script>

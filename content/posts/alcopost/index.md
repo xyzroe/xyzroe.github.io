@@ -4,6 +4,7 @@ date: 2018-05-15
 draft: false
 tags: ["Linux", "Python", "Arduino"]
 ---
+
 {{< load-photoswipe >}}
 
 ## Hardware and software complex of the checkpoint
@@ -18,13 +19,14 @@ order of actions: authorization to ZK - alcohol test - in case of an error again
 
 {{< gallery dir="posts/alcopost/photos" />}}
 
-
+[Schematic](alcopost.pdf)
+{{<icon icon="download" link="alcopost.pdf" color="#fff" stroke_width="2" width="26" height="26" >}}
 {{< embed-pdf url="posts/alcopost/alcopost.pdf" hidePaginator="true" >}}
 
 [OrangePi Alco Post utility](OrangePi.zip)
-{{<icon icon="download" link="OrangePi.zip" color="#6f0" stroke_width="2" width="32" height="32" >}}  
+{{<icon icon="download" link="OrangePi.zip" color="#fff" stroke_width="2" width="26" height="26" >}}
 
 [Wiegand-V3-Library-for-all-Arduino.zip](Arduino/Wiegand-V3-Library-for-all-Arduino.zip)
-{{<icon icon="download" link="Arduino/Wiegand-V3-Library-for-all-Arduino.zip" color="#6f0" stroke_width="2" width="32" height="32" >}}  
+{{<icon icon="download" link="Arduino/Wiegand-V3-Library-for-all-Arduino.zip" color="#fff" stroke_width="2" width="26" height="26" >}}
 
 {{< codeaccordion lang="c" title="Arduino code" file="/posts/alcopost/Arduino/bio_alco_ctr_v2.ino" >}}

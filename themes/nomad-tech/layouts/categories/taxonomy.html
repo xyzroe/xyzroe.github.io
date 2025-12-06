@@ -1,0 +1,41 @@
+{{ define "main" }}
+<section class="content-section" style="display: block; margin-top: 3rem;">
+    <div class="container">
+        <h2>{{ .Title }}</h2>
+        <p style="text-align: center; opacity: 0.8; margin-bottom: 2rem;">{{ .Pages | len }} {{ i18n "posts_count" }}</p>
+        
+        <div class="blog-posts">
+            {{ $paginator := .Paginate .Pages 6 }}
+            {{ range $paginator.Pages }}
+            <article class="blog-post">
+                <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                <div class="blog-meta">
+                    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+                    {{ range .Params.categories }}
+                    <span class="category-tag">{{ . }}</span>
+                    {{ end }}
+                </div>
+                <p>{{ .Summary }}</p>
+                <div class="read-more-container">
+                    <a href="{{ .Permalink }}" class="btn btn-secondary">{{ i18n "read_more" }}</a>
+                </div>
+            </article>
+            {{ end }}
+        </div>
+        
+        {{ if gt $paginator.TotalPages 1 }}
+        <div class="pagination" style="text-align: center; margin-top: 2rem;">
+            {{ if $paginator.HasPrev }}
+            <a href="{{ $paginator.Prev.URL }}" class="btn btn-secondary">{{ i18n "prev_page" }}</a>
+            {{ end }}
+            {{ range $paginator.Pagers }}
+            <a href="{{ .URL }}" class="btn {{ if eq . $paginator }}btn-primary{{ else }}btn-secondary{{ end }}">{{ .PageNumber }}</a>
+            {{ end }}
+            {{ if $paginator.HasNext }}
+            <a href="{{ $paginator.Next.URL }}" class="btn btn-secondary">{{ i18n "next_page" }}</a>
+            {{ end }}
+        </div>
+        {{ end }}
+    </div>
+</section>
+{{ end }}

@@ -1,0 +1,42 @@
+{{ define "main" }}
+<div class="about-container">
+    <article class="about-content">
+        <div class="terminal-header">
+            <div class="terminal-buttons">
+                <span class="btn-close"></span>
+                <span class="btn-minimize"></span>
+                <span class="btn-maximize"></span>
+            </div>
+            <div class="terminal-title">{{ .Title }}.md</div>
+        </div>
+        <div class="terminal-body">
+            <div class="prompt-line">
+                <span class="prompt">$</span>
+                <span class="command">cat {{ .Title | lower }}.md</span>
+            </div>
+            <div class="content">
+                {{ .Content }}
+            </div>
+            {{ if or (eq .Title "About Me") (eq .Title "关于我") }}
+            <div class="contact-section">
+                <div class="prompt-line">
+                    <span class="prompt">$</span>
+                    <span class="command">ls -la contact/</span>
+                </div>
+                <div class="contact-grid">
+                    {{ range .Site.Params.contact }}
+                    <div class="contact-file">
+                        <span class="file-icon">{{ .icon }}</span>
+                        <span class="file-name">{{ .name | lower }}.txt</span>
+                        <span class="file-content">{{ .value }}</span>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </article>
+</div>
+
+
+{{ end }}

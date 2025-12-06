@@ -1,0 +1,108 @@
+baseURL = "/"
+relativeURLs = false
+canonifyURLs = false
+languageCode = "en-us"
+theme = "nomad-tech"
+title = "xyzroe's blog"
+googleAnalytics = "G-5JP6L4L4DL"
+enableRobotsTXT = true
+
+staticDir = ["static", "projects"]
+
+# Suppress raw HTML warnings
+ignoreLogs = ['warning-goldmark-raw-html']
+
+[pagination]
+  pagerSize = 10
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 4
+  [[menu.main]]
+    identifier = "links"
+    name = "Links"
+    url = "/links/"
+    weight = 2
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 3
+
+[params]
+  author = "xyzroe"
+  logo = "XYZROE"
+  subtitle = "DIY • Electronics • Automation"
+  description = "Technical automation, some DIY stuff, little useful scripts, electronic devices development"
+  avatar = "/img/logo.png"
+
+  # Social Media Links
+  [[params.social]]
+    name = "GitHub"
+    class = "github"
+    icon = "https://cdn.simpleicons.org/github/white"
+    description = "Check out my projects"
+    url = "https://github.com/xyzroe"
+    button_text = "View Profile"
+
+  [[params.social]]
+    name = "Email"
+    class = "email"
+    icon = "https://cdn.simpleicons.org/gmail/white"
+    description = "Send me an email"
+    url = "mailto:i@xyzroe.cc"
+    button_text = "Contact"
+
+  [[params.social]]
+    name = "Discord"
+    class = "discord"
+    icon = "https://cdn.simpleicons.org/discord/white"
+    description = "Chat with me on Discord"
+    url = "https://discord.com/users/682499070295801864"
+    button_text = "Add Friend"
+
+  [[params.social]]
+    name = "WeChat"
+    class = "wechat"
+    icon = "https://cdn.simpleicons.org/wechat/white"
+    description = "Connect on WeChat"
+    img = "https://raw.githubusercontent.com/xyzroe/xyzroe/main/wechat.png"
+    button_text = "View QR"
+
+  [[params.social]]
+    name = "Telegram"
+    class = "telegram"
+    icon = "https://cdn.simpleicons.org/telegram/white"
+    description = "Message on Telegram"
+    url = "https://t.me/xyzroe"
+    button_text = "Open chat"
+
+  [[params.social]]
+    name = "WhatsApp"
+    class = "whatsapp"
+    icon = "https://cdn.simpleicons.org/whatsapp/white"
+    description = "Message on WhatsApp"
+    img = "https://raw.githubusercontent.com/xyzroe/xyzroe/main/whatsapp.png"
+    button_text = "View QR"
+
+
+[markup.goldmark.renderer]
+  unsafe = true
+

@@ -1,0 +1,32 @@
+{{ define "main" }}
+<section class="hero" style="min-height: auto; padding: 2rem 2rem 2rem; align-items: flex-start;">
+    <div style="width: 100%; max-width: 1200px; margin: 0 auto;">
+        <div style="text-align: center; margin-bottom: 3rem;">
+            <h1 style="font-size: 3rem; margin-bottom: 1rem;">{{ .Title }}</h1>
+            <p style="font-size: 1.2rem; opacity: 0.9;">{{ .Content }}</p>
+        </div>
+        <div class="social-grid">
+            {{ range $index, $item := .Site.Params.social }}
+            <div class="social-card">
+                <div class="social-icon {{ $item.class }}">
+                    {{ if hasPrefix $item.icon "http" }}
+                        <img src="{{ $item.icon }}" alt="{{ $item.name }}" style="width: 32px; height: 32px;">
+                    {{ else }}
+                        {{ $item.icon }}
+                    {{ end }}
+                </div>
+                <h3>{{ $item.name }}</h3>
+                <p>{{ $item.description }}</p>
+                {{ if $item.img }}
+                    <button type="button" class="btn btn-primary qr-button" data-img="{{ $item.img }}" data-name="{{ $item.name }}" style="margin-top: 1rem; cursor: pointer;">{{ $item.button_text }}</button>
+                {{ else }}
+                    <a href="{{ $item.url }}" class="btn btn-primary" style="margin-top: 1rem;" {{ if not (hasPrefix $item.url "mailto:") }}target="_blank" rel="noopener"{{ end }}>{{ $item.button_text }}</a>
+                {{ end }}
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+{{ partial "qr-modal.html" . }}
+{{ end }}

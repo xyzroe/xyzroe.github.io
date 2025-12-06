@@ -2,10 +2,32 @@
 {{$user := .Get "user"}}
 {{$file := .Get "file"}}
 
-{{ $json := getJSON "https://api.github.com/repos/" $user "/" $repo "/contents/" $file }}
+{{ $url := printf "https://api.github.com/repos/%s/%s/contents/%s" $user $repo $file }}
+{{ $data := resources.GetRemote $url }}
+{{ $json := $data | transform.Unmarshal }}
+
+{{ $content := $json.content | base64Decode }}
+
+{{/* Remove the first H1 header */}}
+{{- if eq (.Get "markdown") "true" -}}
+  {{ $content = $content | replaceRE `(?m)^# .*\n` "" }}
+{{- else -}}
+  {{ $content = $content | replaceRE `<h1[^>]*>.*?</h1>` "" }}
+{{- end -}}
+
+{{ $content = $content | replaceRE `^\s+` "" }}
+
+{{ $content = $content | replaceRE `(?s)^<div[^>]*>.*?img\.shields\.io.*?</div>\s*` "" }}
+
+{{/* Remove About header (h2-h6) */}}
+{{- if eq (.Get "markdown") "true" -}}
+  {{ $content = $content | replaceRE `(?m)^#{2,6} About\n` "" }}
+{{- else -}}
+  {{ $content = $content | replaceRE `<h[2-6][^>]*>About</h[2-6]>` "" }}
+{{- end -}}
 
 {{- if eq (.Get "markdown") "true" -}}
-{{ $json.content | base64Decode | markdownify }}
+{{ $content | markdownify }}
 {{- else -}}
-{{ $json.content | base64Decode | safeHTML }}
+{{ $content | safeHTML }}
 {{- end -}}

@@ -5,6 +5,4 @@ draft: false
 tags: ["eBus", "TTL", "DIY"]
 ---
 
-Go to [eBus - TTL](https://xyzroe.cc/eBus-TTL-adapter/) page
-
-<meta http-equiv="refresh" content="0; url=https://xyzroe.cc/eBus-TTL-adapter/" />
+{{< getgitfile user="xyzroe" repo="eBus-TTL-adapter" file="README.md" markdown="true" >}}

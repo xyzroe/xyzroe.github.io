@@ -1,0 +1,50 @@
+{{ define "main" }}
+<section class="hero" style="display: block; margin-top: 3rem; padding: 1rem;">
+    <div class="container">
+        <h2>{{ .Title }}</h2>
+
+        <!-- <div class="blog-categories" style="text-align: center; margin: 1rem;">
+            <a href="/posts/" class="category-btn {{ if not .Data.Term }}active{{ end }}">{{ i18n "all_posts" }}</a>
+            {{ range .Site.Taxonomies.categories }}
+            
+            <a href="{{ .Page.Permalink }}" class="category-btn">{{ .Page.Title }}</a>
+            {{ end }}
+        </div> -->
+
+        <div class="blog-posts">
+            {{ $paginator := .Paginate .Pages 6 }}
+            {{ range $paginator.Pages }}
+            <article class="blog-post">
+                <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                <div class="blog-meta">
+                    <time datetime="{{ .Date.Format " 2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+                    {{ range .Params.tags }}
+                    <a href="{{ " /tags/" | relLangURL }}{{ . | urlize }}" class="category-tag"
+                        style="color: #00d4ff; text-decoration: none">{{ . }}</a>
+                    {{ end }}
+                </div>
+                <p>{{ .Summary | plainify | truncate 200 }}</p>
+                <div class="read-more-container">
+                    <a href="{{ .Permalink }}" class="btn btn-secondary">{{ i18n "read_more" }}</a>
+                </div>
+            </article>
+            {{ end }}
+        </div>
+
+        {{ if gt $paginator.TotalPages 1 }}
+        <div class="pagination" style="text-align: center; margin-top: 2rem;">
+            {{ if $paginator.HasPrev }}
+            <a href="{{ $paginator.Prev.URL }}" class="btn btn-secondary">{{ i18n "prev_page" }}</a>
+            {{ end }}
+            {{ range $paginator.Pagers }}
+            <a href="{{ .URL }}" class="btn {{ if eq . $paginator }}btn-primary{{ else }}btn-secondary{{ end }}">{{
+                .PageNumber }}</a>
+            {{ end }}
+            {{ if $paginator.HasNext }}
+            <a href="{{ $paginator.Next.URL }}" class="btn btn-secondary">{{ i18n "next_page" }}</a>
+            {{ end }}
+        </div>
+        {{ end }}
+    </div>
+</section>
+{{ end }}

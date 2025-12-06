@@ -1,61 +1,87 @@
 
-.input_inv {
-  position: absolute;
-  opacity: 0;
-  z-index: -1;
-}
-
 .tab {
   border-radius: 8px;
   width: 100%;
   color: white;
   overflow: hidden;
+  margin: 1em 0;
+  border: 1px solid #073471;
 }
+
 .tab-label {
   display: flex;
-  justify-content: space-between;
-  padding: 0.5em;
+  align-items: center;
+  gap: 0.75em;
+  padding: 0.75em 1em;
   background: #073471;
   font-weight: bold;
   cursor: pointer;
-  /* Icon */
+  position: relative;
+  user-select: none;
 }
+
 .tab-label:hover {
   background: #714407;
 }
-.tab-label::after {
-  content: "❯";
-  width: 1em;
-  height: 1em;
-  text-align: center;
-  transition: all 0.35s;
+
+.tab-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 24px;
+  width: 24px;
+  height: 24px;
+  border: 2px solid white !important;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+  font-family: monospace;
 }
+
+.tab-title {
+  flex-grow: 1;
+}
+
+.tab-download {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  padding: 0.25em;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+.tab-download:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
 .tab-content {
   max-height: 0;
-  padding: 0 1em;
-  /*color: #073471;*/
+  padding: 0;
   background: #404851;
-  transition: all 0.35s;
+  transition: max-height 0.0s ease-in-out, padding 0.0s ease-in-out;
+  overflow: hidden;
 }
-.tab-close {
-  display: flex;
-  justify-content: flex-end;
-  padding: 1em;
-  font-size: 0.75em;
-  background: #073471;
-  cursor: pointer;
+
+.tab-label.active .tab-toggle {
+  content: "−";
 }
-.tab-close:hover {
+
+.tab-label.active {
   background: #714407;
 }
 
-input:checked + .tab-label {
-  background: #714407;
-}
-input:checked + .tab-label::after {
-  transform: rotate(90deg);
-}
-input:checked ~ .tab-content {
-  max-height: 5000vh;
+.tab-content.active {
+   background: #272822;
   padding: 1em;
+  max-height: 10000px;
+
 }
