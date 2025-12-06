@@ -160,6 +160,8 @@ section {
   p {
     font-size: clamp(1rem, 2vw, 1.3rem);
     margin-bottom: 2rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
     opacity: 0.9;
   }
 }
@@ -183,6 +185,7 @@ section {
   align-items: center;
   justify-content: center;
   min-height: 48px;
+  margin-top: 0.3rem;
   
   &:focus {
     outline: 2px solid var(--primary-color);
