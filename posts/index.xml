@@ -42,7 +42,8 @@ but I recommend &lt;a href="https://github.com/eBUS/ttyebus"&gt;ttyebus kernel m
 &lt;li&gt;&lt;strong&gt;ser2net&lt;/strong&gt; compatible firmware (ESPEasy, ESP-Link, ESPHome, Tasmota, etc) or hardware converter
 &lt;em&gt;with some restrictions (Receive - OK; Transmit - may be errors)&lt;/em&gt; 🤔&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Also available HA &lt;a href="https://www.home-assistant.io/integrations/ebusd/"&gt;integration&lt;/a&gt; between &lt;a href="https://github.com/john30/ebusd"&gt;ebusd&lt;/a&gt; daemon and Home Assistant 🏚&lt;/p&gt;</description></item><item><title>ZigUSB</title><link>/posts/zigusb/</link><pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate><guid>/posts/zigusb/</guid><description>&lt;h2 id="new-version-of-this-device---zigusb-c6"&gt;New version of this device - &lt;a href="https://github.com/xyzroe/ZigUSB_C6"&gt;ZigUSB C6&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Also available HA &lt;a href="https://www.home-assistant.io/integrations/ebusd/"&gt;integration&lt;/a&gt; between &lt;a href="https://github.com/john30/ebusd"&gt;ebusd&lt;/a&gt; daemon and Home Assistant 🏚&lt;/p&gt;</description></item><item><title>XZG Firmware</title><link>/posts/xzg_fw/</link><pubDate>Sat, 30 Mar 2024 00:00:00 +0000</pubDate><guid>/posts/xzg_fw/</guid><description>&lt;p&gt;I&amp;rsquo;ve been working with Zigbee gateways for a while now, experimenting with different ESP32-based projects and CC2652 coordinators. Each one had its strengths — some excelled at MQTT integration, others at web interfaces or specific hardware support — but switching between them or trying to combine features was a hassle. Too many fragmented efforts meant slower progress for everyone.&lt;/p&gt;
+&lt;p&gt;That&amp;rsquo;s why I created XZG Firmware. It&amp;rsquo;s a unified solution that brings together the best innovations from various Zigbee gateway projects into one codebase. By consolidating efforts on a single, open-source firmware, we can focus on making it better: more features, better stability, easier setup.&lt;/p&gt;</description></item><item><title>ZigUSB</title><link>/posts/zigusb/</link><pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate><guid>/posts/zigusb/</guid><description>&lt;h2 id="new-version-of-this-device---zigusb-c6"&gt;New version of this device - &lt;a href="https://github.com/xyzroe/ZigUSB_C6"&gt;ZigUSB C6&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;ZigUSB was developed as a device that allows you to control and monitor the power of a device connected via USB.&lt;/p&gt;
 &lt;p&gt;Using this device, you can remotely control the power of the USB port to turn on or off the connected device. And also monitor the current voltage and current. And it&amp;rsquo;s not a bad Zigbee network router.&lt;/p&gt;
 &lt;p&gt;Frequent use cases: converting a &amp;ldquo;stupid&amp;rdquo; USB lamp into a &amp;ldquo;smart&amp;rdquo; one; connecting modems / sticks / adapters, which sometimes require a power reset; monitoring the current consumption of any connected device.&lt;/p&gt;</description></item><item><title>OpenTherm - TTL</title><link>/posts/ot-ttl/</link><pubDate>Thu, 07 Jul 2022 00:00:00 +0000</pubDate><guid>/posts/ot-ttl/</guid><description>&lt;p&gt;This adapter is designed to connect an OpenTherm compatible boiler to any TTL port (TTL-USB, ESP8266, ESP32, Arduino, etc).&lt;/p&gt;
@@ -69,7 +70,11 @@ but I recommend &lt;a href="https://github.com/eBUS/ttyebus"&gt;ttyebus kernel m
 &lt;img width="70%" src="https://raw.githubusercontent.com/xyzroe/OpenTherm-TTL-adapter/master/images/4.jpeg"&gt;
 &lt;/div&gt;
 &lt;h3 id="schematic"&gt;Schematic&lt;/h3&gt;
-&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/xyzroe/OpenTherm-TTL-adapter/master/images/Schematic.png" alt="Schematic"&gt;&lt;/p&gt;</description></item><item><title>ZigUNO</title><link>/posts/ziguno/</link><pubDate>Wed, 10 Nov 2021 00:00:00 +0000</pubDate><guid>/posts/ziguno/</guid><description>&lt;div align="center"&gt;&lt;img src="https://raw.githubusercontent.com/xyzroe/ZigUNO/main/2530_v1/photos/main.png"&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/xyzroe/OpenTherm-TTL-adapter/master/images/Schematic.png" alt="Schematic"&gt;&lt;/p&gt;</description></item><item><title>Zigbee LCD 1604</title><link>/posts/zigbee_lcd_1604/</link><pubDate>Thu, 16 Jun 2022 00:00:00 +0000</pubDate><guid>/posts/zigbee_lcd_1604/</guid><description>&lt;p&gt;Hey folks, I&amp;rsquo;ve been tinkering with home automation lately, and I came up with this cool little gadget: the Zigbee LCD 1604. It&amp;rsquo;s basically a 16x4 character LCD that connects to your Zigbee network, perfect for displaying sensor data, notifications, or just fun messages around the house.&lt;/p&gt;
+&lt;div align="center"&gt;
+&lt;img alt="Zigbee LCD 1604" src="https://github.com/xyzroe/Zigbee-LCD-1604/raw/main/images/front_mini.jpeg"&gt;
+&lt;/div&gt;
+&lt;p&gt;What makes it awesome? You can send text to specific lines, control the backlight with motion detection, adjust brightness, and even display Cyrillic characters. It integrates seamlessly with PTVO firmware, so you can hook up all sorts of sensors like temperature, humidity, or light levels.&lt;/p&gt;</description></item><item><title>ZigUNO</title><link>/posts/ziguno/</link><pubDate>Wed, 10 Nov 2021 00:00:00 +0000</pubDate><guid>/posts/ziguno/</guid><description>&lt;div align="center"&gt;&lt;img src="https://raw.githubusercontent.com/xyzroe/ZigUNO/main/2530_v1/photos/main.png"&gt;&lt;/div&gt;
 &lt;p&gt;ZigUNO is a development board for creating DIY Zigbee devices based on Ebyte E18-MS1 module (CC2530)&lt;/p&gt;
 &lt;p&gt;Physically, the board is compatible with all shields of the Uno form factor. Finally you can use countless old Arduino shields 🤣&lt;/p&gt;
 &lt;p&gt;As a firmware, it is proposed to use:&lt;/p&gt;
@@ -209,31 +214,26 @@ In the original firmware, all control takes place only through the serial port.&
  &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;h4 id="board-v2-available-at-github-hahahugoshortcode18s1hbhb"&gt;Board v2 available at &lt;a href="https://github.com/diyruz/Zintercom/"&gt;GitHub&lt;/a&gt; 
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;a href="https://github.com/diyruz/Zintercom/" class="" &gt;
-
-
- &lt;i data-feather="github" stroke-width="2" width="24" height="24" color="" style="position: relative; top: 10px;"&gt;&lt;/i&gt;
-
-
- &lt;span class="screen-reader-text"&gt;&lt;/span&gt;
-&lt;/a&gt;
-
-&lt;/h4&gt;
 &lt;p&gt;Today I want to share with you the history of the development of a device for controlling a multi-apartment intercom using the Zigbee protocol.&lt;/p&gt;
-&lt;p&gt;Once upon a time I had an automatic doorphone opener based on: ESP8266, a module for two relays (16A) and a transistor with a strapping.&lt;/p&gt;</description></item><item><title>oko2mqtt</title><link>/posts/oko2mqtt/</link><pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate><guid>/posts/oko2mqtt/</guid><description>&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" /&gt;
+&lt;p&gt;Once upon a time I had an automatic doorphone opener based on: ESP8266, a module for two relays (16A) and a transistor with a strapping.&lt;/p&gt;
+&lt;p&gt;All this was collected on a bunch of wires and snot made of hot melt glue and looked something like the second photo.
+
+
+
+&lt;div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery"&gt;
+	 
+
+&lt;link rel="stylesheet" href="/css/hugo-easy-gallery.css" /&gt;
+&lt;div class="box" style="
+ 
+ "&gt;
+ &lt;figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"&gt;
+ &lt;div class="img" style="background-image: url('v1/photos.jpg');"&gt;
+ &lt;img itemprop="thumbnail" src="v1/photos.jpg" alt="Zintercom"/&gt;
+ &lt;/div&gt;
+ &lt;a href="v1/photos.jpg" itemprop="contentUrl"&gt;&lt;/a&gt;
+ &lt;figcaption&gt;
+ &lt;p&gt;Zintercom&lt;/p&gt;</description></item><item><title>oko2mqtt</title><link>/posts/oko2mqtt/</link><pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate><guid>/posts/oko2mqtt/</guid><description>&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" /&gt;
 &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" /&gt;
 
 
@@ -309,7 +309,8 @@ In the original firmware, all control takes place only through the serial port.&
 &lt;li&gt;added tm-t20-NP.ppd to make possible print Nova Poshta Zebra Markings 100x100mm from iOS browser (with image scaling)&lt;/li&gt;
 &lt;li&gt;added tm-t20-TG.ppd to make possible print Nova Poshta Zebra Markings 100x100mm from iOS PDF file (without image scaling)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;This is also a reason to dive deeper into GitHub / Docker / CUPS, so why not? Hope this is helpful to someone.&lt;/p&gt;</description></item><item><title>Using LED P-10 to display txt file</title><link>/posts/led_p10/</link><pubDate>Tue, 05 May 2020 00:00:00 +0000</pubDate><guid>/posts/led_p10/</guid><description>&lt;p&gt;I need to display actual number of tickets in our service support system using big LED display. 🚨&lt;/p&gt;
+&lt;p&gt;This is also a reason to dive deeper into GitHub / Docker / CUPS, so why not? Hope this is helpful to someone.&lt;/p&gt;</description></item><item><title>ZigDev Wiki</title><link>/posts/zigdevwiki/</link><pubDate>Mon, 28 Dec 2020 00:00:00 +0000</pubDate><guid>/posts/zigdevwiki/</guid><description>&lt;p&gt;A few years ago, I got really into DIY electronics, especially Zigbee devices. I was tinkering with CC2530 chips, flashing firmware, and building custom coordinators — you know, the usual hobbyist stuff. But every time I started a new project, I&amp;rsquo;d spend hours hunting for the right setup guides, wiring diagrams, or troubleshooting tips scattered across forums, GitHub issues, and random blog posts.&lt;/p&gt;
+&lt;p&gt;That frustration led me to create the ZigDev Wiki. It&amp;rsquo;s not a massive documentation site; it&amp;rsquo;s a practical mini-wiki where I (and now the community) collect those hard-won nuggets of knowledge. Things like how to set up IAR for Zigbee development, pinouts for common boards, or quick fixes for firmware quirks that drove me crazy.&lt;/p&gt;</description></item><item><title>Using LED P-10 to display txt file</title><link>/posts/led_p10/</link><pubDate>Tue, 05 May 2020 00:00:00 +0000</pubDate><guid>/posts/led_p10/</guid><description>&lt;p&gt;I need to display actual number of tickets in our service support system using big LED display. 🚨&lt;/p&gt;
 &lt;p&gt;I found LED P10 modules, they are cheap and nice, different colors available. Modules can be connected one by one to make big screen.💡&lt;/p&gt;
 &lt;p&gt;Then I need some hardware to connect to P-10 and I found &lt;a href="https://vkmodule.com.ua/LED_P10/ledVBC_P10_1R.html"&gt;VBC-P10 module&lt;/a&gt; from great Ukrainian 🇺🇦 manufacture VK Module. But it has only RS485 and TTL ports, while I need Ethernet so I add &lt;a href="https://vkmodule.com.ua/Converter/ConverterE485.html"&gt;Ethernet - RS485&lt;/a&gt; converter. Now I can print numbers on P-10 sending TCP packets to converter IP address. 🚀&lt;/p&gt;</description></item><item><title>Alco Post</title><link>/posts/alcopost/</link><pubDate>Tue, 15 May 2018 00:00:00 +0000</pubDate><guid>/posts/alcopost/</guid><description>&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" /&gt;
 &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" /&gt;

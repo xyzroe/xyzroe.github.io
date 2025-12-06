@@ -47,28 +47,23 @@
  &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;h4 id="board-v2-available-at-github-hahahugoshortcode18s1hbhb"&gt;Board v2 available at &lt;a href="https://github.com/diyruz/Zintercom/"&gt;GitHub&lt;/a&gt; 
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;a href="https://github.com/diyruz/Zintercom/" class="" &gt;
-
-
- &lt;i data-feather="github" stroke-width="2" width="24" height="24" color="" style="position: relative; top: 10px;"&gt;&lt;/i&gt;
-
-
- &lt;span class="screen-reader-text"&gt;&lt;/span&gt;
-&lt;/a&gt;
-
-&lt;/h4&gt;
 &lt;p&gt;Today I want to share with you the history of the development of a device for controlling a multi-apartment intercom using the Zigbee protocol.&lt;/p&gt;
-&lt;p&gt;Once upon a time I had an automatic doorphone opener based on: ESP8266, a module for two relays (16A) and a transistor with a strapping.&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;Once upon a time I had an automatic doorphone opener based on: ESP8266, a module for two relays (16A) and a transistor with a strapping.&lt;/p&gt;
+&lt;p&gt;All this was collected on a bunch of wires and snot made of hot melt glue and looked something like the second photo.
+
+
+
+&lt;div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery"&gt;
+	 
+
+&lt;link rel="stylesheet" href="/css/hugo-easy-gallery.css" /&gt;
+&lt;div class="box" style="
+ 
+ "&gt;
+ &lt;figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"&gt;
+ &lt;div class="img" style="background-image: url('v1/photos.jpg');"&gt;
+ &lt;img itemprop="thumbnail" src="v1/photos.jpg" alt="Zintercom"/&gt;
+ &lt;/div&gt;
+ &lt;a href="v1/photos.jpg" itemprop="contentUrl"&gt;&lt;/a&gt;
+ &lt;figcaption&gt;
+ &lt;p&gt;Zintercom&lt;/p&gt;</description></item></channel></rss>
