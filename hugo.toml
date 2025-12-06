@@ -4,7 +4,6 @@ canonifyURLs = false
 languageCode = "en-us"
 theme = "nomad-tech"
 title = "xyzroe's blog"
-googleAnalytics = "G-5JP6L4L4DL"
 enableRobotsTXT = true
 
 staticDir = ["static", "projects"]
@@ -47,6 +46,7 @@ ignoreLogs = ['warning-goldmark-raw-html']
     weight = 3
 
 [params]
+  googleAnalytics = "G-5JP6L4L4DL"
   author = "xyzroe"
   logo = "XYZROE"
   subtitle = "DIY • Electronics • Automation"

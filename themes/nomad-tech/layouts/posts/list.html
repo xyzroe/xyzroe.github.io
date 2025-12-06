@@ -19,8 +19,9 @@
                 <div class="blog-meta">
                     <time datetime="{{ .Date.Format " 2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
                     {{ range .Params.tags }}
-                    <a href="{{ " /tags/" | relLangURL }}{{ . | urlize }}" class="category-tag"
-                        style="color: #00d4ff; text-decoration: none">{{ . }}</a>
+                    {{ $tagURL := printf "%s%s" ("/tags/" | relLangURL) (. | urlize) }}
+                    <a href="{{ $tagURL }}" class="category-tag" style="color: #00d4ff; text-decoration: none">{{ .
+                        }}</a>
                     {{ end }}
                 </div>
                 <p>{{ .Summary | plainify | truncate 200 }}</p>
