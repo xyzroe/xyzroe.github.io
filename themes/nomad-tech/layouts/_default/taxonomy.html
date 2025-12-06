@@ -1,13 +1,23 @@
 {{ define "main" }}
-<div style="margin-top: 5rem; padding: 2rem; background: rgba(255, 255, 255, 0.02); border-radius: 15px; border: 1px solid rgba(255, 255, 255, 0.1);">
+<div
+    style="margin-top: 5rem; padding: 2rem; background: rgba(255, 255, 255, 0.02); border-radius: 15px; border: 1px solid rgba(255, 255, 255, 0.1);">
     <h1 style="color: #00d4ff; margin-bottom: 2rem; text-align: center;">{{ .Title }}</h1>
     <div class="blog-posts">
         {{ range .Pages }}
         <article class="blog-post">
-            <h3>{{ .Title }}</h3>
-            <div class="blog-meta">{{ .Date.Format (i18n "date_format") }}</div>
-            <p>{{ .Summary }}</p>
-            <a href="{{ .Permalink }}" class="btn btn-secondary">{{ i18n "read_more" }}</a>
+            <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+            <div class="blog-meta">
+                <time datetime="{{ .Date.Format " 2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+                {{ range .Params.tags }}
+                {{ $tagURL := printf "%s%s" ("/tags/" | relLangURL) (. | urlize) }}
+                <a href="{{ $tagURL }}" class="category-tag" style="color: #00d4ff; text-decoration: none">{{ .
+                    }}</a>
+                {{ end }}
+            </div>
+            <p>{{ .Summary | plainify | truncate 200 }}</p>
+            <div class="read-more-container">
+                <a href="{{ .Permalink }}" class="btn btn-secondary">{{ i18n "read_more" }}</a>
+            </div>
         </article>
         {{ end }}
     </div>
