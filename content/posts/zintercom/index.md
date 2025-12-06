@@ -4,10 +4,8 @@ date: 2021-02-15
 draft: false
 tags: ["Zigbee", "domophone", "DIY"]
 ---
+
 {{< load-photoswipe >}}
-
-
-#### Board v2 available at [GitHub](https://github.com/diyruz/Zintercom/) {{<icon icon="github" link="https://github.com/diyruz/Zintercom/" stroke_width="2" width="24" height="24" >}}
 
 Today I want to share with you the history of the development of a device for controlling a multi-apartment intercom using the Zigbee protocol.
 
@@ -42,9 +40,6 @@ There was also a discount coupon - decided to try a surface mount order. It turn
 {{< figure src="v1/jlcpcb_order.jpg" width="45%" caption="Received boards" caption-position="bottom">}}
 {{< figure src="v1/jlcpcb_brelok.jpg" width="20%" caption="and a gift" caption-position="bottom">}}
 
-
-
-
 While the boards were being manufactured and driving, the firmware for the device was written and a converter for zigbee2mqtt was made.
 
 Dashboard zigbee2mqtt
@@ -53,17 +48,17 @@ Exposes zigbee2mqtt
 {{< figure src="v1/z2m_exposes.png" width="75%" >}}
 In total, what opportunities do we have:
 
-* Receive notification when the intercom rings (OnOff direct binding is also supported)
+- Receive notification when the intercom rings (OnOff direct binding is also supported)
 
-* Do not interfere with the intercom (Never mode)
+- Do not interfere with the intercom (Never mode)
 
-* Automatically open to everyone (Always mode)
+- Automatically open to everyone (Always mode)
 
-* Open the door once during a call, or at the first call after switching on (Once mode)
+- Open the door once during a call, or at the first call after switching on (Once mode)
 
-* Dump all incoming (Drop mode)
+- Dump all incoming (Drop mode)
 
-* Mute the sound on the intercom handset (or use it without a handset at all)
+- Mute the sound on the intercom handset (or use it without a handset at all)
 
 Call time, waiting time, opening time and report sending interval are configured through exposes.
 
@@ -71,9 +66,7 @@ For debugging, a second-hand semi-working set of the digital outdoor panel and t
 
 Video demonstrating different operating modes (1.5X)
 
-
 {{< vimeo 537687929 >}}
-
 
 In the course of debugging and testing, there were some changes:
 
@@ -98,8 +91,6 @@ Interval for sending reports - 1 minute
 Battery status is not sent
 Router or end device mode
 
-
-
 With battery (E18-MS1-PCB only):
 
 Interval for sending reports - 30 minutes
@@ -114,4 +105,8 @@ After all the tests, I installed the board in the intercom tube case:
 
 {{< figure src="v1/inside.jpg" width="35%" >}}
 
-Firmware, diagrams, Gerbers are open and are on the project's [Github repository](https://github.com/xyzroe/Zintercom/) {{<icon icon="github" link="https://github.com/xyzroe/Zintercom/" stroke_width="2" width="32" height="30" >}}
+##
+
+Firmware, diagrams, Gerbers (also v2) are open and available on the project's
+
+[Github repository](https://github.com/xyzroe/Zintercom/) {{<icon icon="github" link="https://github.com/xyzroe/Zintercom/" stroke_width="2" width="32" height="30" >}}
