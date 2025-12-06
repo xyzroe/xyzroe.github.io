@@ -1,18 +1,424 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on xyzroe's blog</title><link>//xyzroe.cc/posts/</link><description>Recent content in Posts on xyzroe's blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 02 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="//xyzroe.cc/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>ESP32 C6 D1</title><link>//xyzroe.cc/posts/esp32_c6_d1/</link><pubDate>Fri, 02 May 2025 00:00:00 +0000</pubDate><guid>//xyzroe.cc/posts/esp32_c6_d1/</guid><description>Go to ESP32 C6 D1 page</description></item><item><title>ZigUSB_С6</title><link>//xyzroe.cc/posts/zigusb_%D1%816/</link><pubDate>Sat, 12 Oct 2024 00:00:00 +0000</pubDate><guid>//xyzroe.cc/posts/zigusb_%D1%816/</guid><description>Go to ZigUSB_C6 page</description></item><item><title>ZigDC</title><link>//xyzroe.cc/posts/zigdc/</link><pubDate>Fri, 05 Jul 2024 00:00:00 +0000</pubDate><guid>//xyzroe.cc/posts/zigdc/</guid><description>Go to ZigDC page</description></item><item><title>eBus - TTL</title><link>//xyzroe.cc/posts/ebus-ttl/</link><pubDate>Mon, 10 Jun 2024 00:00:00 +0000</pubDate><guid>//xyzroe.cc/posts/ebus-ttl/</guid><description>Go to eBus - TTL page</description></item><item><title>ZigUSB</title><link>//xyzroe.cc/posts/zigusb/</link><pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate><guid>//xyzroe.cc/posts/zigusb/</guid><description>Go to ZigUSB page</description></item><item><title>OpenTherm - TTL</title><link>//xyzroe.cc/posts/ot-ttl/</link><pubDate>Thu, 07 Jul 2022 00:00:00 +0000</pubDate><guid>//xyzroe.cc/posts/ot-ttl/</guid><description>Go to OpenTherm - TTL page</description></item><item><title>ZigUNO</title><link>//xyzroe.cc/posts/ziguno/</link><pubDate>Wed, 10 Nov 2021 00:00:00 +0000</pubDate><guid>//xyzroe.cc/posts/ziguno/</guid><description>Go to ZigUNO page</description></item><item><title>Lumi Router JN5169</title><link>//xyzroe.cc/posts/lumi_router/</link><pubDate>Wed, 07 Jul 2021 00:00:00 +0000</pubDate><guid>//xyzroe.cc/posts/lumi_router/</guid><description>Lumi Router This is fork of Lumi Router JN5169 firmware for use with the LM15-SP-WM module used in the Xiaomi Smart Plug (ZNCZ02LM).
-Also it can be used with any other JN5169 based module.
-The only difference is the ability to reset the device using a button on DIO 0.
-In the original firmware, all control takes place only through the serial port.
-How to flash Download JN-SW-4107 and install Connect using JP1 to your USB-TTL according to table below: LM15-SP-WM (JP1) JN5169 Function USB-TTL 1 DIO 28 TXD0 RX 2 DIO 29 RXD0 TX 3 DIO 22 SPIMISO GND 4 DIO 9/39 VDD 3.</description></item><item><title>Doorphone opener Zintercom</title><link>//xyzroe.cc/posts/zintercom/</link><pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate><guid>//xyzroe.cc/posts/zintercom/</guid><description>Board v2 available at GitHub Today I want to share with you the history of the development of a device for controlling a multi-apartment intercom using the Zigbee protocol.
-Once upon a time I had an automatic doorphone opener based on: ESP8266, a module for two relays (16A) and a transistor with a strapping.
-All this was collected on a bunch of wires and snot made of hot melt glue and looked something like the second photo.</description></item><item><title>oko2mqtt</title><link>//xyzroe.cc/posts/oko2mqtt/</link><pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate><guid>//xyzroe.cc/posts/oko2mqtt/</guid><description>During the New Year holidays, we got around to finishing and posting on GitHub the code that allows you to raise your TCP server for OKO devices with state transfer and the ability to control via MQTT. 💡
-The MQTT AutoDiscovery mechanism has been implemented, which allows you to automatically add all devices / inputs / outputs / sensors to HomeAssistant. Supports work simultaneously with multiple devices, multithreading.
-Currently, support for expansion cards and radio sockets is limited.</description></item><item><title>AirPrint with Epson TM-T20II</title><link>//xyzroe.cc/posts/cups-airprint-epson-tm/</link><pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate><guid>//xyzroe.cc/posts/cups-airprint-epson-tm/</guid><description>Ubuntu Xenial Docker image with CUPS and additional Epson TM-T20II drivers It is intended to be used as an AirPrint relay on the Synology NAS, and the local Avahi will be used to advertise printers on the network.
-Changes in comparison with the original:
-updated version of Ubuntu added prebuilt rastertozj from here added tm-t20-orig.ppd is tm-t20ii-rastertotmt.ppd provided on Epson site modifited to use rastertozj filter added tm-t20-NP.ppd to make possible print Nova Poshta Zebra Markings 100x100mm from iOS browser (with image scaling) added tm-t20-TG.</description></item><item><title>Using LED P-10 to display txt file</title><link>//xyzroe.cc/posts/led_p10/</link><pubDate>Tue, 05 May 2020 00:00:00 +0000</pubDate><guid>//xyzroe.cc/posts/led_p10/</guid><description>I need to display actual number of tickets in our service support system using big LED display. 🚨
-I found LED P10 modules, they are cheap and nice, different colors available. Modules can be connected one by one to make big screen.💡
-Then I need some hardware to connect to P-10 and I found VBC-P10 module from great Ukrainian 🇺🇦 manufacture VK Module. But it has only RS485 and TTL ports, while I need Ethernet so I add Ethernet - RS485 converter.</description></item><item><title>Alco Post</title><link>//xyzroe.cc/posts/alcopost/</link><pubDate>Tue, 15 May 2018 00:00:00 +0000</pubDate><guid>//xyzroe.cc/posts/alcopost/</guid><description>Hardware and software complex of the checkpoint 1 turnstile any 2 controllers ZK MA300 2 alcotesters Alcofor S40 1 speaker and LED unit with voice prompts and mode indication 1 orange pi with python utility for displaying photos and status of passing through the turnstile and writing to the database order of actions: authorization to ZK - alcohol test - in case of an error again - in case of an error, again record the violation and refusal to work (or notification of dismissal, but with permission to exit) - record a successful passage and farewell.</description></item><item><title>WP Matador recovery</title><link>//xyzroe.cc/posts/matador/</link><pubDate>Wed, 30 Sep 2015 00:00:00 +0000</pubDate><guid>//xyzroe.cc/posts/matador/</guid><description>Deck ovens for baking bread manufactured by WP Matador.
-Year of release 1995.
-A complete overhaul was carried out with the replacement of all executive units, including complete disassembly, replacement-welding of metal, cleaning, primer-painting, assembly, insulation with mineral wool, installation of cladding.
-Burners - gas, new Giersch RG20.
-The control panels are made from scratch according to our own design.
-Light - 4 incandescent lamps 50W, soft start, timer shutdown.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on xyzroe's blog</title><link>/posts/</link><description>Recent content in Posts on xyzroe's blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 02 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>ESP32 C6 D1</title><link>/posts/esp32_c6_d1/</link><pubDate>Fri, 02 May 2025 00:00:00 +0000</pubDate><guid>/posts/esp32_c6_d1/</guid><description>&lt;p&gt;Unleash the future of wireless connectivity with &lt;strong&gt;ESP32 C6 D1&lt;/strong&gt; — a compact, feature-packed dev board crafted in the iconic Wemos D1 form factor, designed for developers craving speed, efficiency, and versatility.&lt;br&gt;
+Built on Espressif’s cutting-edge ESP32-C6, this board supercharges your IoT projects.&lt;/p&gt;
+&lt;p&gt;✅ Wemos D1 Form Factor – Seamless compatibility with existing shields, sensors, and accessories.&lt;br&gt;
+✅ RISC-V Core – High performance (160 MHz) meets energy efficiency for battery-powered brilliance.&lt;br&gt;
+✅ 10 GPIOs – SPI, I2C, UART, PWM, and ADC pins for endless hardware hacks. + UART pins&lt;br&gt;
+✅ USB-C (PROG + JTAG) + Onboard WS2812 LED – Plug, play, and debug with modern convenience.&lt;br&gt;
+✅ Wi-Fi 6 + Bluetooth 5 LE + 802.15.4 Zigbee/Thread&lt;/p&gt;</description></item><item><title>ZigUSB_С6</title><link>/posts/zigusb_%D1%816/</link><pubDate>Sat, 12 Oct 2024 00:00:00 +0000</pubDate><guid>/posts/zigusb_%D1%816/</guid><description>&lt;p&gt;The ZigUSB C6 project is an innovative solution designed to enhance the control and monitoring of USB-powered devices through Zigbee communication. This project aims to provide a seamless integration for smart home enthusiasts and professionals alike, enabling remote control, automation, and monitoring of USB devices in a Zigbee-enabled ecosystem.&lt;/p&gt;
+&lt;p&gt;This project is based on the original ZigUSB but uses a modern chip and custom-developed firmware.&lt;/p&gt;
+&lt;p&gt;Using this device, you can remotely control the power of the USB port to turn on or off the connected device. Additionally, you can monitor the current voltage and current. It also functions as a reliable Zigbee network router.&lt;/p&gt;</description></item><item><title>ZigDC</title><link>/posts/zigdc/</link><pubDate>Fri, 05 Jul 2024 00:00:00 +0000</pubDate><guid>/posts/zigdc/</guid><description>&lt;p&gt;Zigbee based 6ch DC power meter
+E18-MS1-PA2, 2xINA3221, SHTC3
+0 - 26V, 8mV resolution
++/- 5.2A, 1.3mA resolution&lt;/p&gt;
+&lt;h3 id="overview"&gt;Overview&lt;/h3&gt;
+&lt;div align="center"&gt;
+&lt;img width="48%" src="https://raw.githubusercontent.com/xyzroe/ZigDC/master/images/top.png"&gt;
+&lt;img width="48%" src="https://raw.githubusercontent.com/xyzroe/ZigDC/master/images/bottom.png"&gt;
+&lt;/div&gt;
+&lt;div align="center"&gt;
+&lt;img width="55%" src="https://raw.githubusercontent.com/xyzroe/ZigDC/master/images/ZigDC.png"&gt;
+&lt;/div&gt;
+&lt;h3 id="schematic"&gt;Schematic&lt;/h3&gt;
+&lt;p&gt;&lt;a href="./files/Schematic.pdf"&gt;PDF&lt;/a&gt;&lt;br&gt;
+&lt;img src="https://raw.githubusercontent.com/xyzroe/ZigDC/master/images/Schematic.png" alt="Schematic"&gt;&lt;/p&gt;
+&lt;h3 id="where-to-buy"&gt;Where to buy?&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://www.tindie.com/stores/mind/?ref=offsite_badges&amp;utm_source=sellers_xyzroe&amp;utm_medium=badges&amp;utm_campaign=badge_large"&gt;&lt;img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-larges.png" alt="I sell on Tindie" height="120"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="firmware"&gt;Firmware&lt;/h3&gt;
+&lt;p&gt;PTVO firmware constructor was used to build the firmware. There are two versions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Router - Supports routing but doesn&amp;rsquo;t report the uptime of the device. &lt;a href="./files/ZigDC_router.hex"&gt;hex&lt;/a&gt; 🔵 &lt;a href="./files/ZigDC_router.txt"&gt;txt&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;End Device - No router functions, no SHTC3 sensor (temperature &amp;amp; humidity), but reports the uptime of the device. &lt;a href="./files/ZigDC_end.hex"&gt;hex&lt;/a&gt; 🟠 &lt;a href="./files/ZigDC_end.txt"&gt;txt&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="use-ptvo-version-2024-01-04-because-newer-version-use-different-clusters-and-dont-support-3-channels-on-1-endpoint"&gt;Use PTVO version 2024-01-04 because newer version use different clusters and don&amp;rsquo;t support 3 channels on 1 endpoint.&lt;/h4&gt;
+&lt;h3 id="support"&gt;Support&lt;/h3&gt;
+&lt;p&gt;Currently only supports in zigbee2mqtt. (Without external converter)&lt;/p&gt;</description></item><item><title>eBus - TTL</title><link>/posts/ebus-ttl/</link><pubDate>Mon, 10 Jun 2024 00:00:00 +0000</pubDate><guid>/posts/ebus-ttl/</guid><description>&lt;p&gt;This adapter is designed to connect an eBus compatible boiler to any TTL port (TTL-USB, ESP8266, ESP32, Arduino, etc).&lt;/p&gt;
+&lt;p&gt;Same size as popular RS485-TTL module for more compatibility.&lt;/p&gt;
+&lt;p&gt;As a software part, you can use &lt;a href="https://github.com/john30/ebusd"&gt;ebusd&lt;/a&gt; with different connection types:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;TTL-UART&lt;/strong&gt; - you need converter that doesn&amp;rsquo;t buffer too much data (CP2102 or FTDI based (like FT232)) 👍&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ESP8266 / ESP32&lt;/strong&gt; enhanced ebusd protocol using &lt;a href="https://github.com/john30/ebusd-esp/"&gt;ebusd-esp&lt;/a&gt; firmware (only Wi-Fi connection now) 🎉&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Raspberry Pi&lt;/strong&gt; internal UART port can be used with &lt;a href="https://github.com/john30/ebusd/wiki/eBus-with-Raspberry-Pi-Serial"&gt;some preparations&lt;/a&gt;,&lt;br&gt;
+but I recommend &lt;a href="https://github.com/eBUS/ttyebus"&gt;ttyebus kernel module&lt;/a&gt; which is with the lowest latency possible 🚀&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ser2net&lt;/strong&gt; compatible firmware (ESPEasy, ESP-Link, ESPHome, Tasmota, etc) or hardware converter
+&lt;em&gt;with some restrictions (Receive - OK; Transmit - may be errors)&lt;/em&gt; 🤔&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Also available HA &lt;a href="https://www.home-assistant.io/integrations/ebusd/"&gt;integration&lt;/a&gt; between &lt;a href="https://github.com/john30/ebusd"&gt;ebusd&lt;/a&gt; daemon and Home Assistant 🏚&lt;/p&gt;</description></item><item><title>ZigUSB</title><link>/posts/zigusb/</link><pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate><guid>/posts/zigusb/</guid><description>&lt;h2 id="new-version-of-this-device---zigusb-c6"&gt;New version of this device - &lt;a href="https://github.com/xyzroe/ZigUSB_C6"&gt;ZigUSB C6&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;ZigUSB was developed as a device that allows you to control and monitor the power of a device connected via USB.&lt;/p&gt;
+&lt;p&gt;Using this device, you can remotely control the power of the USB port to turn on or off the connected device. And also monitor the current voltage and current. And it&amp;rsquo;s not a bad Zigbee network router.&lt;/p&gt;
+&lt;p&gt;Frequent use cases: converting a &amp;ldquo;stupid&amp;rdquo; USB lamp into a &amp;ldquo;smart&amp;rdquo; one; connecting modems / sticks / adapters, which sometimes require a power reset; monitoring the current consumption of any connected device.&lt;/p&gt;</description></item><item><title>OpenTherm - TTL</title><link>/posts/ot-ttl/</link><pubDate>Thu, 07 Jul 2022 00:00:00 +0000</pubDate><guid>/posts/ot-ttl/</guid><description>&lt;p&gt;This adapter is designed to connect an OpenTherm compatible boiler to any TTL port (TTL-USB, ESP8266, ESP32, Arduino, etc).&lt;/p&gt;
+&lt;p&gt;Same size as popular RS485-TTL module for more compatibility.&lt;/p&gt;
+&lt;p&gt;As software part you can use:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/Laxilef/OTGateway"&gt;OpenTherm gateway for HomeAssistant&lt;/a&gt; - very intelligent OT control firmware 🧠&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://tasmota.github.io/docs/OpenTherm/"&gt;Tasmota OpenTherm&lt;/a&gt; - perhaps the easiest way to connect the boiler to your smart home system 🏚&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/jpraus/arduino-opentherm"&gt;Opentherm IO library for Arduino&lt;/a&gt; or &lt;a href="https://github.com/ihormelnyk/opentherm_library/"&gt;OpenTherm Arduino/ESP8266 Library&lt;/a&gt; (slave mode only)&lt;br&gt;
+&lt;em&gt;if you want to build your own firmware&lt;/em&gt; 🛠&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="overview"&gt;Overview&lt;/h3&gt;
+&lt;div align="center"&gt;
+&lt;img width="30%" src="https://raw.githubusercontent.com/xyzroe/OpenTherm-TTL-adapter/master/images/top.png"&gt;
+&lt;img width="30%" src="https://raw.githubusercontent.com/xyzroe/OpenTherm-TTL-adapter/master/images/bottom.png"&gt;
+&lt;/div&gt;
+&lt;h3 id="photos"&gt;Photos&lt;/h3&gt;
+&lt;div align="center"&gt;
+&lt;img width="70%" src="https://raw.githubusercontent.com/xyzroe/OpenTherm-TTL-adapter/master/images/1.jpeg"&gt;
+&lt;img width="70%" src="https://raw.githubusercontent.com/xyzroe/OpenTherm-TTL-adapter/master/images/2.jpeg"&gt;
+&lt;/div&gt;
+&lt;div align="center"&gt;
+&lt;img width="70%" src="https://raw.githubusercontent.com/xyzroe/OpenTherm-TTL-adapter/master/images/3.jpeg"&gt;
+&lt;img width="70%" src="https://raw.githubusercontent.com/xyzroe/OpenTherm-TTL-adapter/master/images/4.jpeg"&gt;
+&lt;/div&gt;
+&lt;h3 id="schematic"&gt;Schematic&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/xyzroe/OpenTherm-TTL-adapter/master/images/Schematic.png" alt="Schematic"&gt;&lt;/p&gt;</description></item><item><title>ZigUNO</title><link>/posts/ziguno/</link><pubDate>Wed, 10 Nov 2021 00:00:00 +0000</pubDate><guid>/posts/ziguno/</guid><description>&lt;div align="center"&gt;&lt;img src="https://raw.githubusercontent.com/xyzroe/ZigUNO/main/2530_v1/photos/main.png"&gt;&lt;/div&gt;
+&lt;p&gt;ZigUNO is a development board for creating DIY Zigbee devices based on Ebyte E18-MS1 module (CC2530)&lt;/p&gt;
+&lt;p&gt;Physically, the board is compatible with all shields of the Uno form factor. Finally you can use countless old Arduino shields 🤣&lt;/p&gt;
+&lt;p&gt;As a firmware, it is proposed to use:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Zigbee configurable firmware &lt;a href="https://ptvo.info"&gt;PTVO&lt;/a&gt; 🚀&lt;/li&gt;
+&lt;li&gt;Develop your own using &lt;a href="https://github.com/formtapez/ZigUP"&gt;ZigUP&lt;/a&gt; or one of the various &lt;a href="https://diyruz.github.io/"&gt;DIYRuZ&lt;/a&gt; projects as examples&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id="usefull-links"&gt;Usefull links&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;A beginner&amp;rsquo;s guide to using PTVO is available on &lt;a href="https://habr.com/en/post/581568/"&gt;Habr&lt;/a&gt; &lt;em&gt;(in russian)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;A beginner&amp;rsquo;s guide to developing your own Zigbee firmware is available on &lt;a href="https://habr.com/ru/company/iobroker/blog/495926/"&gt;Habr&lt;/a&gt; &lt;em&gt;(in russian)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;A complete guide showing how to install IAR to start developing your own firmware is available on &lt;a href="https://zigdevwiki.github.io/Begin/IAR_install/"&gt;ZigDevWiki&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div align="center"&gt;
+&lt;a href="https://certification.oshwa.org/ua000001.html"&gt;
+&lt;img width="40%" alt="OSHWA UID UA000001" src="https://github.com/xyzroe/ZigUNO/raw/main/OSHWA.png"&gt;&lt;br&gt;
+ZigUNO is certified open source hardware project
+&lt;/a&gt;&lt;/div&gt;
+&lt;h3 id="overview"&gt;Overview&lt;/h3&gt;
+&lt;h4 id="v15-jun-2022"&gt;v1.5 (Jun 2022)&lt;/h4&gt;
+&lt;div align="center"&gt;
+&lt;img width="45%" src="https://raw.githubusercontent.com/xyzroe/ZigUNO/main/2530_v1.5/images/top.png"&gt;
+&lt;img width="45%" src="https://raw.githubusercontent.com/xyzroe/ZigUNO/main/2530_v1.5/images/bottom.png"&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Version 1.5 differences:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Lumi Router JN5169</title><link>/posts/lumi_router/</link><pubDate>Wed, 07 Jul 2021 00:00:00 +0000</pubDate><guid>/posts/lumi_router/</guid><description>&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" /&gt;
+&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" /&gt;
+
+
+
+&lt;div class="pswp" tabindex="-1" role="dialog" aria-hidden="true"&gt;
+
+&lt;div class="pswp__bg"&gt;&lt;/div&gt;
+
+&lt;div class="pswp__scroll-wrap"&gt;
+ 
+ &lt;div class="pswp__container"&gt;
+ &lt;div class="pswp__item"&gt;&lt;/div&gt;
+ &lt;div class="pswp__item"&gt;&lt;/div&gt;
+ &lt;div class="pswp__item"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ 
+ &lt;div class="pswp__ui pswp__ui--hidden"&gt;
+ &lt;div class="pswp__top-bar"&gt;
+ 
+ &lt;div class="pswp__counter"&gt;&lt;/div&gt;
+ &lt;button class="pswp__button pswp__button--close" title="Close (Esc)"&gt;&lt;/button&gt;
+ &lt;button class="pswp__button pswp__button--share" title="Share"&gt;&lt;/button&gt;
+ &lt;button class="pswp__button pswp__button--fs" title="Toggle fullscreen"&gt;&lt;/button&gt;
+ &lt;button class="pswp__button pswp__button--zoom" title="Zoom in/out"&gt;&lt;/button&gt;
+ 
+ 
+ &lt;div class="pswp__preloader"&gt;
+ &lt;div class="pswp__preloader__icn"&gt;
+ &lt;div class="pswp__preloader__cut"&gt;
+ &lt;div class="pswp__preloader__donut"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"&gt;
+ &lt;div class="pswp__share-tooltip"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"&gt;
+ &lt;/button&gt;
+ &lt;button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"&gt;
+ &lt;/button&gt;
+ &lt;div class="pswp__caption"&gt;
+ &lt;div class="pswp__caption__center"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;p&gt;This is fork of &lt;a href="https://github.com/igo-r/Lumi-Router-JN5169"&gt;Lumi Router JN5169 firmware&lt;/a&gt; for use with the LM15-SP-WM module used in the Xiaomi Smart Plug (ZNCZ02LM).&lt;br&gt;
+Also it can be used with any other JN5169 based module.&lt;/p&gt;
+&lt;p&gt;The only difference is the ability to reset the device using a button on DIO 0.&lt;br&gt;
+In the original firmware, all control takes place only through the serial port.&lt;/p&gt;</description></item><item><title>Doorphone opener Zintercom</title><link>/posts/zintercom/</link><pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate><guid>/posts/zintercom/</guid><description>&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" /&gt;
+&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" /&gt;
+
+
+
+&lt;div class="pswp" tabindex="-1" role="dialog" aria-hidden="true"&gt;
+
+&lt;div class="pswp__bg"&gt;&lt;/div&gt;
+
+&lt;div class="pswp__scroll-wrap"&gt;
+ 
+ &lt;div class="pswp__container"&gt;
+ &lt;div class="pswp__item"&gt;&lt;/div&gt;
+ &lt;div class="pswp__item"&gt;&lt;/div&gt;
+ &lt;div class="pswp__item"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ 
+ &lt;div class="pswp__ui pswp__ui--hidden"&gt;
+ &lt;div class="pswp__top-bar"&gt;
+ 
+ &lt;div class="pswp__counter"&gt;&lt;/div&gt;
+ &lt;button class="pswp__button pswp__button--close" title="Close (Esc)"&gt;&lt;/button&gt;
+ &lt;button class="pswp__button pswp__button--share" title="Share"&gt;&lt;/button&gt;
+ &lt;button class="pswp__button pswp__button--fs" title="Toggle fullscreen"&gt;&lt;/button&gt;
+ &lt;button class="pswp__button pswp__button--zoom" title="Zoom in/out"&gt;&lt;/button&gt;
+ 
+ 
+ &lt;div class="pswp__preloader"&gt;
+ &lt;div class="pswp__preloader__icn"&gt;
+ &lt;div class="pswp__preloader__cut"&gt;
+ &lt;div class="pswp__preloader__donut"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"&gt;
+ &lt;div class="pswp__share-tooltip"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"&gt;
+ &lt;/button&gt;
+ &lt;button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"&gt;
+ &lt;/button&gt;
+ &lt;div class="pswp__caption"&gt;
+ &lt;div class="pswp__caption__center"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h4 id="board-v2-available-at-github-hahahugoshortcode18s1hbhb"&gt;Board v2 available at &lt;a href="https://github.com/diyruz/Zintercom/"&gt;GitHub&lt;/a&gt; 
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;a href="https://github.com/diyruz/Zintercom/" class="" &gt;
+
+
+ &lt;i data-feather="github" stroke-width="2" width="24" height="24" color="" style="position: relative; top: 10px;"&gt;&lt;/i&gt;
+
+
+ &lt;span class="screen-reader-text"&gt;&lt;/span&gt;
+&lt;/a&gt;
+
+&lt;/h4&gt;
+&lt;p&gt;Today I want to share with you the history of the development of a device for controlling a multi-apartment intercom using the Zigbee protocol.&lt;/p&gt;
+&lt;p&gt;Once upon a time I had an automatic doorphone opener based on: ESP8266, a module for two relays (16A) and a transistor with a strapping.&lt;/p&gt;</description></item><item><title>oko2mqtt</title><link>/posts/oko2mqtt/</link><pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate><guid>/posts/oko2mqtt/</guid><description>&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" /&gt;
+&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" /&gt;
+
+
+
+&lt;div class="pswp" tabindex="-1" role="dialog" aria-hidden="true"&gt;
+
+&lt;div class="pswp__bg"&gt;&lt;/div&gt;
+
+&lt;div class="pswp__scroll-wrap"&gt;
+ 
+ &lt;div class="pswp__container"&gt;
+ &lt;div class="pswp__item"&gt;&lt;/div&gt;
+ &lt;div class="pswp__item"&gt;&lt;/div&gt;
+ &lt;div class="pswp__item"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ 
+ &lt;div class="pswp__ui pswp__ui--hidden"&gt;
+ &lt;div class="pswp__top-bar"&gt;
+ 
+ &lt;div class="pswp__counter"&gt;&lt;/div&gt;
+ &lt;button class="pswp__button pswp__button--close" title="Close (Esc)"&gt;&lt;/button&gt;
+ &lt;button class="pswp__button pswp__button--share" title="Share"&gt;&lt;/button&gt;
+ &lt;button class="pswp__button pswp__button--fs" title="Toggle fullscreen"&gt;&lt;/button&gt;
+ &lt;button class="pswp__button pswp__button--zoom" title="Zoom in/out"&gt;&lt;/button&gt;
+ 
+ 
+ &lt;div class="pswp__preloader"&gt;
+ &lt;div class="pswp__preloader__icn"&gt;
+ &lt;div class="pswp__preloader__cut"&gt;
+ &lt;div class="pswp__preloader__donut"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"&gt;
+ &lt;div class="pswp__share-tooltip"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"&gt;
+ &lt;/button&gt;
+ &lt;button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"&gt;
+ &lt;/button&gt;
+ &lt;div class="pswp__caption"&gt;
+ &lt;div class="pswp__caption__center"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;During the New Year holidays, we got around to finishing and posting on GitHub the code that allows you to raise your TCP server for OKO devices with state transfer and the ability to control via MQTT. 💡&lt;/p&gt;
+&lt;p&gt;The MQTT AutoDiscovery mechanism has been implemented, which allows you to automatically add all devices / inputs / outputs / sensors to HomeAssistant. Supports work simultaneously with multiple devices, multithreading.&lt;/p&gt;</description></item><item><title>AirPrint with Epson TM-T20II</title><link>/posts/cups-airprint-epson-tm/</link><pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate><guid>/posts/cups-airprint-epson-tm/</guid><description>&lt;p&gt;&lt;img src="Epson-TM-T20II-POS.png" alt="EPSON TM T20II"&gt;
+&lt;img src="Apple-AirPrint-new-logo.png" alt="Apple AirPrint"&gt;&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;h2 id="ubuntu-xenial-docker-image-with-cups-and-additional-epson-tm-t20ii-drivers"&gt;Ubuntu Xenial Docker image with CUPS and additional Epson TM-T20II drivers&lt;/h2&gt;
+&lt;p&gt;It is intended to be used as an AirPrint relay on the Synology NAS, and the local Avahi will be used to advertise printers on the network.&lt;/p&gt;
+&lt;p&gt;Changes in comparison with the &lt;a href="https://github.com/quadportnick/docker-cups-airprint"&gt;original&lt;/a&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;updated version of Ubuntu&lt;/li&gt;
+&lt;li&gt;added prebuilt rastertozj from &lt;a href="https://github.com/nemik/epson-tm-t20-cups"&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;added tm-t20-orig.ppd is tm-t20ii-rastertotmt.ppd provided on Epson site modifited to use rastertozj filter&lt;/li&gt;
+&lt;li&gt;added tm-t20-NP.ppd to make possible print Nova Poshta Zebra Markings 100x100mm from iOS browser (with image scaling)&lt;/li&gt;
+&lt;li&gt;added tm-t20-TG.ppd to make possible print Nova Poshta Zebra Markings 100x100mm from iOS PDF file (without image scaling)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This is also a reason to dive deeper into GitHub / Docker / CUPS, so why not? Hope this is helpful to someone.&lt;/p&gt;</description></item><item><title>Using LED P-10 to display txt file</title><link>/posts/led_p10/</link><pubDate>Tue, 05 May 2020 00:00:00 +0000</pubDate><guid>/posts/led_p10/</guid><description>&lt;p&gt;I need to display actual number of tickets in our service support system using big LED display. 🚨&lt;/p&gt;
+&lt;p&gt;I found LED P10 modules, they are cheap and nice, different colors available. Modules can be connected one by one to make big screen.💡&lt;/p&gt;
+&lt;p&gt;Then I need some hardware to connect to P-10 and I found &lt;a href="https://vkmodule.com.ua/LED_P10/ledVBC_P10_1R.html"&gt;VBC-P10 module&lt;/a&gt; from great Ukrainian 🇺🇦 manufacture VK Module. But it has only RS485 and TTL ports, while I need Ethernet so I add &lt;a href="https://vkmodule.com.ua/Converter/ConverterE485.html"&gt;Ethernet - RS485&lt;/a&gt; converter. Now I can print numbers on P-10 sending TCP packets to converter IP address. 🚀&lt;/p&gt;</description></item><item><title>Alco Post</title><link>/posts/alcopost/</link><pubDate>Tue, 15 May 2018 00:00:00 +0000</pubDate><guid>/posts/alcopost/</guid><description>&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" /&gt;
+&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" /&gt;
+
+
+
+&lt;div class="pswp" tabindex="-1" role="dialog" aria-hidden="true"&gt;
+
+&lt;div class="pswp__bg"&gt;&lt;/div&gt;
+
+&lt;div class="pswp__scroll-wrap"&gt;
+ 
+ &lt;div class="pswp__container"&gt;
+ &lt;div class="pswp__item"&gt;&lt;/div&gt;
+ &lt;div class="pswp__item"&gt;&lt;/div&gt;
+ &lt;div class="pswp__item"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ 
+ &lt;div class="pswp__ui pswp__ui--hidden"&gt;
+ &lt;div class="pswp__top-bar"&gt;
+ 
+ &lt;div class="pswp__counter"&gt;&lt;/div&gt;
+ &lt;button class="pswp__button pswp__button--close" title="Close (Esc)"&gt;&lt;/button&gt;
+ &lt;button class="pswp__button pswp__button--share" title="Share"&gt;&lt;/button&gt;
+ &lt;button class="pswp__button pswp__button--fs" title="Toggle fullscreen"&gt;&lt;/button&gt;
+ &lt;button class="pswp__button pswp__button--zoom" title="Zoom in/out"&gt;&lt;/button&gt;
+ 
+ 
+ &lt;div class="pswp__preloader"&gt;
+ &lt;div class="pswp__preloader__icn"&gt;
+ &lt;div class="pswp__preloader__cut"&gt;
+ &lt;div class="pswp__preloader__donut"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"&gt;
+ &lt;div class="pswp__share-tooltip"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"&gt;
+ &lt;/button&gt;
+ &lt;button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"&gt;
+ &lt;/button&gt;
+ &lt;div class="pswp__caption"&gt;
+ &lt;div class="pswp__caption__center"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id="hardware-and-software-complex-of-the-checkpoint"&gt;Hardware and software complex of the checkpoint&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;1 turnstile any&lt;/li&gt;
+&lt;li&gt;2 controllers ZK MA300&lt;/li&gt;
+&lt;li&gt;2 alcotesters Alcofor S40&lt;/li&gt;
+&lt;li&gt;1 speaker and LED unit with voice prompts and mode indication&lt;/li&gt;
+&lt;li&gt;1 orange pi with python utility for displaying photos and status of passing through the turnstile and writing to the database&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;order of actions: authorization to ZK - alcohol test - in case of an error again - in case of an error, again record the violation and refusal to work (or notification of dismissal, but with permission to exit) - record a successful passage and farewell.&lt;/p&gt;</description></item><item><title>WP Matador recovery</title><link>/posts/matador/</link><pubDate>Wed, 30 Sep 2015 00:00:00 +0000</pubDate><guid>/posts/matador/</guid><description>&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" /&gt;
+&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" /&gt;
+
+
+
+&lt;div class="pswp" tabindex="-1" role="dialog" aria-hidden="true"&gt;
+
+&lt;div class="pswp__bg"&gt;&lt;/div&gt;
+
+&lt;div class="pswp__scroll-wrap"&gt;
+ 
+ &lt;div class="pswp__container"&gt;
+ &lt;div class="pswp__item"&gt;&lt;/div&gt;
+ &lt;div class="pswp__item"&gt;&lt;/div&gt;
+ &lt;div class="pswp__item"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ 
+ &lt;div class="pswp__ui pswp__ui--hidden"&gt;
+ &lt;div class="pswp__top-bar"&gt;
+ 
+ &lt;div class="pswp__counter"&gt;&lt;/div&gt;
+ &lt;button class="pswp__button pswp__button--close" title="Close (Esc)"&gt;&lt;/button&gt;
+ &lt;button class="pswp__button pswp__button--share" title="Share"&gt;&lt;/button&gt;
+ &lt;button class="pswp__button pswp__button--fs" title="Toggle fullscreen"&gt;&lt;/button&gt;
+ &lt;button class="pswp__button pswp__button--zoom" title="Zoom in/out"&gt;&lt;/button&gt;
+ 
+ 
+ &lt;div class="pswp__preloader"&gt;
+ &lt;div class="pswp__preloader__icn"&gt;
+ &lt;div class="pswp__preloader__cut"&gt;
+ &lt;div class="pswp__preloader__donut"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"&gt;
+ &lt;div class="pswp__share-tooltip"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"&gt;
+ &lt;/button&gt;
+ &lt;button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"&gt;
+ &lt;/button&gt;
+ &lt;div class="pswp__caption"&gt;
+ &lt;div class="pswp__caption__center"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Deck ovens for baking bread manufactured by &lt;strong&gt;WP Matador&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Year of release &lt;strong&gt;1995&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;A complete overhaul was carried out with the replacement of all executive units, including complete disassembly, replacement-welding of metal, cleaning, primer-painting, assembly, insulation with mineral wool, installation of cladding.&lt;/p&gt;
+&lt;p&gt;Burners - gas, new &lt;strong&gt;Giersch RG20&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The control panels are made from scratch according to our &lt;strong&gt;own design&lt;/strong&gt;.&lt;/p&gt;</description></item></channel></rss>

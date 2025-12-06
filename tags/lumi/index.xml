@@ -1,5 +1,67 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Lumi on xyzroe's blog</title><link>//xyzroe.cc/tags/lumi/</link><description>Recent content in Lumi on xyzroe's blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 07 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="//xyzroe.cc/tags/lumi/index.xml" rel="self" type="application/rss+xml"/><item><title>Lumi Router JN5169</title><link>//xyzroe.cc/posts/lumi_router/</link><pubDate>Wed, 07 Jul 2021 00:00:00 +0000</pubDate><guid>//xyzroe.cc/posts/lumi_router/</guid><description>Lumi Router This is fork of Lumi Router JN5169 firmware for use with the LM15-SP-WM module used in the Xiaomi Smart Plug (ZNCZ02LM).
-Also it can be used with any other JN5169 based module.
-The only difference is the ability to reset the device using a button on DIO 0.
-In the original firmware, all control takes place only through the serial port.
-How to flash Download JN-SW-4107 and install Connect using JP1 to your USB-TTL according to table below: LM15-SP-WM (JP1) JN5169 Function USB-TTL 1 DIO 28 TXD0 RX 2 DIO 29 RXD0 TX 3 DIO 22 SPIMISO GND 4 DIO 9/39 VDD 3.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Lumi on xyzroe's blog</title><link>/tags/lumi/</link><description>Recent content in Lumi on xyzroe's blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 07 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/lumi/index.xml" rel="self" type="application/rss+xml"/><item><title>Lumi Router JN5169</title><link>/posts/lumi_router/</link><pubDate>Wed, 07 Jul 2021 00:00:00 +0000</pubDate><guid>/posts/lumi_router/</guid><description>&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" /&gt;
+&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" /&gt;
+
+
+
+&lt;div class="pswp" tabindex="-1" role="dialog" aria-hidden="true"&gt;
+
+&lt;div class="pswp__bg"&gt;&lt;/div&gt;
+
+&lt;div class="pswp__scroll-wrap"&gt;
+ 
+ &lt;div class="pswp__container"&gt;
+ &lt;div class="pswp__item"&gt;&lt;/div&gt;
+ &lt;div class="pswp__item"&gt;&lt;/div&gt;
+ &lt;div class="pswp__item"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ 
+ &lt;div class="pswp__ui pswp__ui--hidden"&gt;
+ &lt;div class="pswp__top-bar"&gt;
+ 
+ &lt;div class="pswp__counter"&gt;&lt;/div&gt;
+ &lt;button class="pswp__button pswp__button--close" title="Close (Esc)"&gt;&lt;/button&gt;
+ &lt;button class="pswp__button pswp__button--share" title="Share"&gt;&lt;/button&gt;
+ &lt;button class="pswp__button pswp__button--fs" title="Toggle fullscreen"&gt;&lt;/button&gt;
+ &lt;button class="pswp__button pswp__button--zoom" title="Zoom in/out"&gt;&lt;/button&gt;
+ 
+ 
+ &lt;div class="pswp__preloader"&gt;
+ &lt;div class="pswp__preloader__icn"&gt;
+ &lt;div class="pswp__preloader__cut"&gt;
+ &lt;div class="pswp__preloader__donut"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"&gt;
+ &lt;div class="pswp__share-tooltip"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"&gt;
+ &lt;/button&gt;
+ &lt;button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"&gt;
+ &lt;/button&gt;
+ &lt;div class="pswp__caption"&gt;
+ &lt;div class="pswp__caption__center"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;p&gt;This is fork of &lt;a href="https://github.com/igo-r/Lumi-Router-JN5169"&gt;Lumi Router JN5169 firmware&lt;/a&gt; for use with the LM15-SP-WM module used in the Xiaomi Smart Plug (ZNCZ02LM).&lt;br&gt;
+Also it can be used with any other JN5169 based module.&lt;/p&gt;
+&lt;p&gt;The only difference is the ability to reset the device using a button on DIO 0.&lt;br&gt;
+In the original firmware, all control takes place only through the serial port.&lt;/p&gt;</description></item></channel></rss>

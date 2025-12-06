@@ -1,5 +1,110 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Python on xyzroe's blog</title><link>//xyzroe.cc/tags/python/</link><description>Recent content in Python on xyzroe's blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 10 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="//xyzroe.cc/tags/python/index.xml" rel="self" type="application/rss+xml"/><item><title>oko2mqtt</title><link>//xyzroe.cc/posts/oko2mqtt/</link><pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate><guid>//xyzroe.cc/posts/oko2mqtt/</guid><description>During the New Year holidays, we got around to finishing and posting on GitHub the code that allows you to raise your TCP server for OKO devices with state transfer and the ability to control via MQTT. 💡
-The MQTT AutoDiscovery mechanism has been implemented, which allows you to automatically add all devices / inputs / outputs / sensors to HomeAssistant. Supports work simultaneously with multiple devices, multithreading.
-Currently, support for expansion cards and radio sockets is limited.</description></item><item><title>Using LED P-10 to display txt file</title><link>//xyzroe.cc/posts/led_p10/</link><pubDate>Tue, 05 May 2020 00:00:00 +0000</pubDate><guid>//xyzroe.cc/posts/led_p10/</guid><description>I need to display actual number of tickets in our service support system using big LED display. 🚨
-I found LED P10 modules, they are cheap and nice, different colors available. Modules can be connected one by one to make big screen.💡
-Then I need some hardware to connect to P-10 and I found VBC-P10 module from great Ukrainian 🇺🇦 manufacture VK Module. But it has only RS485 and TTL ports, while I need Ethernet so I add Ethernet - RS485 converter.</description></item><item><title>Alco Post</title><link>//xyzroe.cc/posts/alcopost/</link><pubDate>Tue, 15 May 2018 00:00:00 +0000</pubDate><guid>//xyzroe.cc/posts/alcopost/</guid><description>Hardware and software complex of the checkpoint 1 turnstile any 2 controllers ZK MA300 2 alcotesters Alcofor S40 1 speaker and LED unit with voice prompts and mode indication 1 orange pi with python utility for displaying photos and status of passing through the turnstile and writing to the database order of actions: authorization to ZK - alcohol test - in case of an error again - in case of an error, again record the violation and refusal to work (or notification of dismissal, but with permission to exit) - record a successful passage and farewell.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Python on xyzroe's blog</title><link>/tags/python/</link><description>Recent content in Python on xyzroe's blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 10 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/python/index.xml" rel="self" type="application/rss+xml"/><item><title>oko2mqtt</title><link>/posts/oko2mqtt/</link><pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate><guid>/posts/oko2mqtt/</guid><description>&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" /&gt;
+&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" /&gt;
+
+
+
+&lt;div class="pswp" tabindex="-1" role="dialog" aria-hidden="true"&gt;
+
+&lt;div class="pswp__bg"&gt;&lt;/div&gt;
+
+&lt;div class="pswp__scroll-wrap"&gt;
+ 
+ &lt;div class="pswp__container"&gt;
+ &lt;div class="pswp__item"&gt;&lt;/div&gt;
+ &lt;div class="pswp__item"&gt;&lt;/div&gt;
+ &lt;div class="pswp__item"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ 
+ &lt;div class="pswp__ui pswp__ui--hidden"&gt;
+ &lt;div class="pswp__top-bar"&gt;
+ 
+ &lt;div class="pswp__counter"&gt;&lt;/div&gt;
+ &lt;button class="pswp__button pswp__button--close" title="Close (Esc)"&gt;&lt;/button&gt;
+ &lt;button class="pswp__button pswp__button--share" title="Share"&gt;&lt;/button&gt;
+ &lt;button class="pswp__button pswp__button--fs" title="Toggle fullscreen"&gt;&lt;/button&gt;
+ &lt;button class="pswp__button pswp__button--zoom" title="Zoom in/out"&gt;&lt;/button&gt;
+ 
+ 
+ &lt;div class="pswp__preloader"&gt;
+ &lt;div class="pswp__preloader__icn"&gt;
+ &lt;div class="pswp__preloader__cut"&gt;
+ &lt;div class="pswp__preloader__donut"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"&gt;
+ &lt;div class="pswp__share-tooltip"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"&gt;
+ &lt;/button&gt;
+ &lt;button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"&gt;
+ &lt;/button&gt;
+ &lt;div class="pswp__caption"&gt;
+ &lt;div class="pswp__caption__center"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;During the New Year holidays, we got around to finishing and posting on GitHub the code that allows you to raise your TCP server for OKO devices with state transfer and the ability to control via MQTT. 💡&lt;/p&gt;
+&lt;p&gt;The MQTT AutoDiscovery mechanism has been implemented, which allows you to automatically add all devices / inputs / outputs / sensors to HomeAssistant. Supports work simultaneously with multiple devices, multithreading.&lt;/p&gt;</description></item><item><title>Using LED P-10 to display txt file</title><link>/posts/led_p10/</link><pubDate>Tue, 05 May 2020 00:00:00 +0000</pubDate><guid>/posts/led_p10/</guid><description>&lt;p&gt;I need to display actual number of tickets in our service support system using big LED display. 🚨&lt;/p&gt;
+&lt;p&gt;I found LED P10 modules, they are cheap and nice, different colors available. Modules can be connected one by one to make big screen.💡&lt;/p&gt;
+&lt;p&gt;Then I need some hardware to connect to P-10 and I found &lt;a href="https://vkmodule.com.ua/LED_P10/ledVBC_P10_1R.html"&gt;VBC-P10 module&lt;/a&gt; from great Ukrainian 🇺🇦 manufacture VK Module. But it has only RS485 and TTL ports, while I need Ethernet so I add &lt;a href="https://vkmodule.com.ua/Converter/ConverterE485.html"&gt;Ethernet - RS485&lt;/a&gt; converter. Now I can print numbers on P-10 sending TCP packets to converter IP address. 🚀&lt;/p&gt;</description></item><item><title>Alco Post</title><link>/posts/alcopost/</link><pubDate>Tue, 15 May 2018 00:00:00 +0000</pubDate><guid>/posts/alcopost/</guid><description>&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" /&gt;
+&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" /&gt;
+
+
+
+&lt;div class="pswp" tabindex="-1" role="dialog" aria-hidden="true"&gt;
+
+&lt;div class="pswp__bg"&gt;&lt;/div&gt;
+
+&lt;div class="pswp__scroll-wrap"&gt;
+ 
+ &lt;div class="pswp__container"&gt;
+ &lt;div class="pswp__item"&gt;&lt;/div&gt;
+ &lt;div class="pswp__item"&gt;&lt;/div&gt;
+ &lt;div class="pswp__item"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ 
+ &lt;div class="pswp__ui pswp__ui--hidden"&gt;
+ &lt;div class="pswp__top-bar"&gt;
+ 
+ &lt;div class="pswp__counter"&gt;&lt;/div&gt;
+ &lt;button class="pswp__button pswp__button--close" title="Close (Esc)"&gt;&lt;/button&gt;
+ &lt;button class="pswp__button pswp__button--share" title="Share"&gt;&lt;/button&gt;
+ &lt;button class="pswp__button pswp__button--fs" title="Toggle fullscreen"&gt;&lt;/button&gt;
+ &lt;button class="pswp__button pswp__button--zoom" title="Zoom in/out"&gt;&lt;/button&gt;
+ 
+ 
+ &lt;div class="pswp__preloader"&gt;
+ &lt;div class="pswp__preloader__icn"&gt;
+ &lt;div class="pswp__preloader__cut"&gt;
+ &lt;div class="pswp__preloader__donut"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"&gt;
+ &lt;div class="pswp__share-tooltip"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"&gt;
+ &lt;/button&gt;
+ &lt;button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"&gt;
+ &lt;/button&gt;
+ &lt;div class="pswp__caption"&gt;
+ &lt;div class="pswp__caption__center"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id="hardware-and-software-complex-of-the-checkpoint"&gt;Hardware and software complex of the checkpoint&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;1 turnstile any&lt;/li&gt;
+&lt;li&gt;2 controllers ZK MA300&lt;/li&gt;
+&lt;li&gt;2 alcotesters Alcofor S40&lt;/li&gt;
+&lt;li&gt;1 speaker and LED unit with voice prompts and mode indication&lt;/li&gt;
+&lt;li&gt;1 orange pi with python utility for displaying photos and status of passing through the turnstile and writing to the database&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;order of actions: authorization to ZK - alcohol test - in case of an error again - in case of an error, again record the violation and refusal to work (or notification of dismissal, but with permission to exit) - record a successful passage and farewell.&lt;/p&gt;</description></item></channel></rss>

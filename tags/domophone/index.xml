@@ -1,3 +1,74 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Domophone on xyzroe's blog</title><link>//xyzroe.cc/tags/domophone/</link><description>Recent content in Domophone on xyzroe's blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 15 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="//xyzroe.cc/tags/domophone/index.xml" rel="self" type="application/rss+xml"/><item><title>Doorphone opener Zintercom</title><link>//xyzroe.cc/posts/zintercom/</link><pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate><guid>//xyzroe.cc/posts/zintercom/</guid><description>Board v2 available at GitHub Today I want to share with you the history of the development of a device for controlling a multi-apartment intercom using the Zigbee protocol.
-Once upon a time I had an automatic doorphone opener based on: ESP8266, a module for two relays (16A) and a transistor with a strapping.
-All this was collected on a bunch of wires and snot made of hot melt glue and looked something like the second photo.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Domophone on xyzroe's blog</title><link>/tags/domophone/</link><description>Recent content in Domophone on xyzroe's blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 15 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/domophone/index.xml" rel="self" type="application/rss+xml"/><item><title>Doorphone opener Zintercom</title><link>/posts/zintercom/</link><pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate><guid>/posts/zintercom/</guid><description>&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" /&gt;
+&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" /&gt;
+
+
+
+&lt;div class="pswp" tabindex="-1" role="dialog" aria-hidden="true"&gt;
+
+&lt;div class="pswp__bg"&gt;&lt;/div&gt;
+
+&lt;div class="pswp__scroll-wrap"&gt;
+ 
+ &lt;div class="pswp__container"&gt;
+ &lt;div class="pswp__item"&gt;&lt;/div&gt;
+ &lt;div class="pswp__item"&gt;&lt;/div&gt;
+ &lt;div class="pswp__item"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ 
+ &lt;div class="pswp__ui pswp__ui--hidden"&gt;
+ &lt;div class="pswp__top-bar"&gt;
+ 
+ &lt;div class="pswp__counter"&gt;&lt;/div&gt;
+ &lt;button class="pswp__button pswp__button--close" title="Close (Esc)"&gt;&lt;/button&gt;
+ &lt;button class="pswp__button pswp__button--share" title="Share"&gt;&lt;/button&gt;
+ &lt;button class="pswp__button pswp__button--fs" title="Toggle fullscreen"&gt;&lt;/button&gt;
+ &lt;button class="pswp__button pswp__button--zoom" title="Zoom in/out"&gt;&lt;/button&gt;
+ 
+ 
+ &lt;div class="pswp__preloader"&gt;
+ &lt;div class="pswp__preloader__icn"&gt;
+ &lt;div class="pswp__preloader__cut"&gt;
+ &lt;div class="pswp__preloader__donut"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"&gt;
+ &lt;div class="pswp__share-tooltip"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"&gt;
+ &lt;/button&gt;
+ &lt;button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"&gt;
+ &lt;/button&gt;
+ &lt;div class="pswp__caption"&gt;
+ &lt;div class="pswp__caption__center"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h4 id="board-v2-available-at-github-hahahugoshortcode18s1hbhb"&gt;Board v2 available at &lt;a href="https://github.com/diyruz/Zintercom/"&gt;GitHub&lt;/a&gt; 
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;a href="https://github.com/diyruz/Zintercom/" class="" &gt;
+
+
+ &lt;i data-feather="github" stroke-width="2" width="24" height="24" color="" style="position: relative; top: 10px;"&gt;&lt;/i&gt;
+
+
+ &lt;span class="screen-reader-text"&gt;&lt;/span&gt;
+&lt;/a&gt;
+
+&lt;/h4&gt;
+&lt;p&gt;Today I want to share with you the history of the development of a device for controlling a multi-apartment intercom using the Zigbee protocol.&lt;/p&gt;
+&lt;p&gt;Once upon a time I had an automatic doorphone opener based on: ESP8266, a module for two relays (16A) and a transistor with a strapping.&lt;/p&gt;</description></item></channel></rss>

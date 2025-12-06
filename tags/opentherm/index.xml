@@ -1,1 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>OpenTherm on xyzroe's blog</title><link>//xyzroe.cc/tags/opentherm/</link><description>Recent content in OpenTherm on xyzroe's blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 07 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="//xyzroe.cc/tags/opentherm/index.xml" rel="self" type="application/rss+xml"/><item><title>OpenTherm - TTL</title><link>//xyzroe.cc/posts/ot-ttl/</link><pubDate>Thu, 07 Jul 2022 00:00:00 +0000</pubDate><guid>//xyzroe.cc/posts/ot-ttl/</guid><description>Go to OpenTherm - TTL page</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>OpenTherm on xyzroe's blog</title><link>/tags/opentherm/</link><description>Recent content in OpenTherm on xyzroe's blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 07 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/opentherm/index.xml" rel="self" type="application/rss+xml"/><item><title>OpenTherm - TTL</title><link>/posts/ot-ttl/</link><pubDate>Thu, 07 Jul 2022 00:00:00 +0000</pubDate><guid>/posts/ot-ttl/</guid><description>&lt;p&gt;This adapter is designed to connect an OpenTherm compatible boiler to any TTL port (TTL-USB, ESP8266, ESP32, Arduino, etc).&lt;/p&gt;
+&lt;p&gt;Same size as popular RS485-TTL module for more compatibility.&lt;/p&gt;
+&lt;p&gt;As software part you can use:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/Laxilef/OTGateway"&gt;OpenTherm gateway for HomeAssistant&lt;/a&gt; - very intelligent OT control firmware 🧠&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://tasmota.github.io/docs/OpenTherm/"&gt;Tasmota OpenTherm&lt;/a&gt; - perhaps the easiest way to connect the boiler to your smart home system 🏚&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/jpraus/arduino-opentherm"&gt;Opentherm IO library for Arduino&lt;/a&gt; or &lt;a href="https://github.com/ihormelnyk/opentherm_library/"&gt;OpenTherm Arduino/ESP8266 Library&lt;/a&gt; (slave mode only)&lt;br&gt;
+&lt;em&gt;if you want to build your own firmware&lt;/em&gt; 🛠&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="overview"&gt;Overview&lt;/h3&gt;
+&lt;div align="center"&gt;
+&lt;img width="30%" src="https://raw.githubusercontent.com/xyzroe/OpenTherm-TTL-adapter/master/images/top.png"&gt;
+&lt;img width="30%" src="https://raw.githubusercontent.com/xyzroe/OpenTherm-TTL-adapter/master/images/bottom.png"&gt;
+&lt;/div&gt;
+&lt;h3 id="photos"&gt;Photos&lt;/h3&gt;
+&lt;div align="center"&gt;
+&lt;img width="70%" src="https://raw.githubusercontent.com/xyzroe/OpenTherm-TTL-adapter/master/images/1.jpeg"&gt;
+&lt;img width="70%" src="https://raw.githubusercontent.com/xyzroe/OpenTherm-TTL-adapter/master/images/2.jpeg"&gt;
+&lt;/div&gt;
+&lt;div align="center"&gt;
+&lt;img width="70%" src="https://raw.githubusercontent.com/xyzroe/OpenTherm-TTL-adapter/master/images/3.jpeg"&gt;
+&lt;img width="70%" src="https://raw.githubusercontent.com/xyzroe/OpenTherm-TTL-adapter/master/images/4.jpeg"&gt;
+&lt;/div&gt;
+&lt;h3 id="schematic"&gt;Schematic&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/xyzroe/OpenTherm-TTL-adapter/master/images/Schematic.png" alt="Schematic"&gt;&lt;/p&gt;</description></item></channel></rss>

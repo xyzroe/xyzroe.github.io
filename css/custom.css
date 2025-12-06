@@ -1,0 +1,58 @@
+.language-selector {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem 0 1rem;
+}
+
+.flag-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  line-height: 1;
+}
+
+.language-list {
+  position: absolute;
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  top: 100%;
+  margin-top: 0.5em;
+  background-color: rgba(26, 26, 46, 0.95);
+  border-radius: 0.5em;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.3em;
+  backdrop-filter: blur(10px);
+}
+
+.language-list a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 0.3em;
+  transition: all 0.3s ease;
+}
+
+.language-list a:hover {
+  background-color: rgba(0, 212, 255, 0.2);
+}
+
+.language__img {
+  margin: 2px;
+  cursor: pointer;
+  opacity: .8;
+  font-size: 1.2em;
+}
+
+.language__img:hover,
+.language__img_active {
+  opacity: 1;
+}
