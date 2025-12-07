@@ -4,7 +4,7 @@ Built on Espressif’s cutting-edge ESP32-C6, this board supercharges your IoT p
 ✅ RISC-V Core – High performance (160 MHz) meets energy efficiency for battery-powered brilliance.&lt;br&gt;
 ✅ 10 GPIOs – SPI, I2C, UART, PWM, and ADC pins for endless hardware hacks. + UART pins&lt;br&gt;
 ✅ USB-C (PROG + JTAG) + Onboard WS2812 LED – Plug, play, and debug with modern convenience.&lt;br&gt;
-✅ Wi-Fi 6 + Bluetooth 5 LE + 802.15.4 Zigbee/Thread&lt;/p&gt;</description></item><item><title>ZigUSB_С6</title><link>/posts/zigusb_%D1%816/</link><pubDate>Sat, 12 Oct 2024 00:00:00 +0000</pubDate><guid>/posts/zigusb_%D1%816/</guid><description>&lt;p&gt;The ZigUSB C6 project is an innovative solution designed to enhance the control and monitoring of USB-powered devices through Zigbee communication. This project aims to provide a seamless integration for smart home enthusiasts and professionals alike, enabling remote control, automation, and monitoring of USB devices in a Zigbee-enabled ecosystem.&lt;/p&gt;
+✅ Wi-Fi 6 + Bluetooth 5 LE + 802.15.4 Zigbee/Thread&lt;/p&gt;</description></item><item><title>ZigUSB С6</title><link>/posts/zigusb_%D1%816/</link><pubDate>Sat, 12 Oct 2024 00:00:00 +0000</pubDate><guid>/posts/zigusb_%D1%816/</guid><description>&lt;p&gt;The ZigUSB C6 project is an innovative solution designed to enhance the control and monitoring of USB-powered devices through Zigbee communication. This project aims to provide a seamless integration for smart home enthusiasts and professionals alike, enabling remote control, automation, and monitoring of USB devices in a Zigbee-enabled ecosystem.&lt;/p&gt;
 &lt;p&gt;This project is based on the original ZigUSB but uses a modern chip and custom-developed firmware.&lt;/p&gt;
 &lt;p&gt;Using this device, you can remotely control the power of the USB port to turn on or off the connected device. Additionally, you can monitor the current voltage and current. It also functions as a reliable Zigbee network router.&lt;/p&gt;</description></item><item><title>ZigDC</title><link>/posts/zigdc/</link><pubDate>Fri, 05 Jul 2024 00:00:00 +0000</pubDate><guid>/posts/zigdc/</guid><description>&lt;p&gt;Zigbee based 6ch DC power meter
 E18-MS1-PA2, 2xINA3221, SHTC3
@@ -159,9 +159,9 @@ ZigUNO is certified open source hardware project
 
 
 
+ 
 
-
-&lt;p&gt;This is fork of &lt;a href="https://github.com/igo-r/Lumi-Router-JN5169"&gt;Lumi Router JN5169 firmware&lt;/a&gt; for use with the LM15-SP-WM module used in the Xiaomi Smart Plug (ZNCZ02LM).&lt;br&gt;
+ &lt;p&gt;This is fork of &lt;a href="https://github.com/igo-r/Lumi-Router-JN5169"&gt;Lumi Router JN5169 firmware&lt;/a&gt; for use with the LM15-SP-WM module used in the Xiaomi Smart Plug (ZNCZ02LM).&lt;br&gt;
 Also it can be used with any other JN5169 based module.&lt;/p&gt;
 &lt;p&gt;The only difference is the ability to reset the device using a button on DIO 0.&lt;br&gt;
 In the original firmware, all control takes place only through the serial port.&lt;/p&gt;</description></item><item><title>Doorphone opener Zintercom</title><link>/posts/zintercom/</link><pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate><guid>/posts/zintercom/</guid><description>&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" /&gt;

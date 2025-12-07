@@ -59,9 +59,9 @@
 
 
 
+ 
 
-
-&lt;p&gt;This is fork of &lt;a href="https://github.com/igo-r/Lumi-Router-JN5169"&gt;Lumi Router JN5169 firmware&lt;/a&gt; for use with the LM15-SP-WM module used in the Xiaomi Smart Plug (ZNCZ02LM).&lt;br&gt;
+ &lt;p&gt;This is fork of &lt;a href="https://github.com/igo-r/Lumi-Router-JN5169"&gt;Lumi Router JN5169 firmware&lt;/a&gt; for use with the LM15-SP-WM module used in the Xiaomi Smart Plug (ZNCZ02LM).&lt;br&gt;
 Also it can be used with any other JN5169 based module.&lt;/p&gt;
 &lt;p&gt;The only difference is the ability to reset the device using a button on DIO 0.&lt;br&gt;
 In the original firmware, all control takes place only through the serial port.&lt;/p&gt;</description></item></channel></rss>

@@ -12,9 +12,9 @@
 
 
 
+ 
 
-
-&lt;h2 id="ubuntu-xenial-docker-image-with-cups-and-additional-epson-tm-t20ii-drivers"&gt;Ubuntu Xenial Docker image with CUPS and additional Epson TM-T20II drivers&lt;/h2&gt;
+ &lt;h2 id="ubuntu-xenial-docker-image-with-cups-and-additional-epson-tm-t20ii-drivers"&gt;Ubuntu Xenial Docker image with CUPS and additional Epson TM-T20II drivers&lt;/h2&gt;
 &lt;p&gt;It is intended to be used as an AirPrint relay on the Synology NAS, and the local Avahi will be used to advertise printers on the network.&lt;/p&gt;
 &lt;p&gt;Changes in comparison with the &lt;a href="https://github.com/quadportnick/docker-cups-airprint"&gt;original&lt;/a&gt;:&lt;/p&gt;
 &lt;ul&gt;
