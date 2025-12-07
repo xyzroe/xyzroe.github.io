@@ -1,5 +1,5 @@
 ---
-title: "ZigUSB_С6"
+title: "ZigUSB С6"
 date: 2024-10-12
 draft: false
 tags: ["USB", "ESP32", "Zigbee", "DIY", "C6"]

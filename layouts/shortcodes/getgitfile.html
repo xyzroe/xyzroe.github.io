@@ -10,24 +10,27 @@
 
 {{/* Remove the first H1 header */}}
 {{- if eq (.Get "markdown") "true" -}}
-  {{ $content = $content | replaceRE `(?m)^# .*\n` "" }}
+{{ $content = $content | replaceRE `(?m)^# .*\n` "" }}
 {{- else -}}
-  {{ $content = $content | replaceRE `<h1[^>]*>.*?</h1>` "" }}
-{{- end -}}
+{{ $content = $content | replaceRE `<h1[^>]*>.*?</h1>` "" }}
+  {{- end -}}
 
-{{ $content = $content | replaceRE `^\s+` "" }}
+  {{ $content = $content | replaceRE `^\s+` "" }}
 
-{{ $content = $content | replaceRE `(?s)^<div[^>]*>.*?img\.shields\.io.*?</div>\s*` "" }}
+  {{ $content = $content | replaceRE `(?s)^<div[^>]*>.*?img\.shields\.io.*?</div>\s*` "" }}
 
-{{/* Remove About header (h2-h6) */}}
-{{- if eq (.Get "markdown") "true" -}}
-  {{ $content = $content | replaceRE `(?m)^#{2,6} About\n` "" }}
-{{- else -}}
-  {{ $content = $content | replaceRE `<h[2-6][^>]*>About</h[2-6]>` "" }}
-{{- end -}}
+    {{/* Remove About header (h2-h6) */}}
+    {{- if eq (.Get "markdown") "true" -}}
+    {{ $content = $content | replaceRE `(?m)^#{2,6} About\n` "" }}
+    {{- else -}}
+    {{ $content = $content | replaceRE `<h[2-6][^>]*>About</h[2-6]>` "" }}
+      {{- end -}}
 
-{{- if eq (.Get "markdown") "true" -}}
-{{ $content | markdownify }}
-{{- else -}}
-{{ $content | safeHTML }}
-{{- end -}}
+      {{ $content = printf "%s\n\n##\n\n[View project on GitHub](https://github.com/%s/%s)" $content (.Get "user") (.Get
+      "repo") }}
+
+      {{- if eq (.Get "markdown") "true" -}}
+      {{ $content | markdownify }}
+      {{- else -}}
+      {{ $content | safeHTML }}
+      {{- end -}}
