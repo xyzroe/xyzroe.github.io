@@ -1,5 +1,5 @@
 ---
-title: "ESP32-C6 Relay Adapter (2–8CH)"
+title: "C6 Relays add-on board"
 date: 2026-02-17
 draft: false
 tags: ["ESP32", "C6", "DIY", "relay", "tasmota", "arduino", "zigbee", "bluetooth"]
