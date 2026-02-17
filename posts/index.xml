@@ -1,4 +1,55 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on xyzroe's blog</title><link>/posts/</link><description>Recent content in Posts on xyzroe's blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 02 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>ESP32 C6 D1</title><link>/posts/esp32_c6_d1/</link><pubDate>Fri, 02 May 2025 00:00:00 +0000</pubDate><guid>/posts/esp32_c6_d1/</guid><description>&lt;p&gt;Unleash the future of wireless connectivity with &lt;strong&gt;ESP32 C6 D1&lt;/strong&gt; — a compact, feature-packed dev board crafted in the iconic Wemos D1 form factor, designed for developers craving speed, efficiency, and versatility.&lt;br&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on xyzroe's blog</title><link>/posts/</link><description>Recent content in Posts on xyzroe's blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 17 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>ESP32-C6 Relay Adapter (2–8CH)</title><link>/posts/c6_relays/</link><pubDate>Tue, 17 Feb 2026 00:00:00 +0000</pubDate><guid>/posts/c6_relays/</guid><description>&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" /&gt;
+&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" /&gt;
+
+
+
+&lt;div class="pswp" tabindex="-1" role="dialog" aria-hidden="true"&gt;
+
+&lt;div class="pswp__bg"&gt;&lt;/div&gt;
+
+&lt;div class="pswp__scroll-wrap"&gt;
+ 
+ &lt;div class="pswp__container"&gt;
+ &lt;div class="pswp__item"&gt;&lt;/div&gt;
+ &lt;div class="pswp__item"&gt;&lt;/div&gt;
+ &lt;div class="pswp__item"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ 
+ &lt;div class="pswp__ui pswp__ui--hidden"&gt;
+ &lt;div class="pswp__top-bar"&gt;
+ 
+ &lt;div class="pswp__counter"&gt;&lt;/div&gt;
+ &lt;button class="pswp__button pswp__button--close" title="Close (Esc)"&gt;&lt;/button&gt;
+ &lt;button class="pswp__button pswp__button--share" title="Share"&gt;&lt;/button&gt;
+ &lt;button class="pswp__button pswp__button--fs" title="Toggle fullscreen"&gt;&lt;/button&gt;
+ &lt;button class="pswp__button pswp__button--zoom" title="Zoom in/out"&gt;&lt;/button&gt;
+ 
+ 
+ &lt;div class="pswp__preloader"&gt;
+ &lt;div class="pswp__preloader__icn"&gt;
+ &lt;div class="pswp__preloader__cut"&gt;
+ &lt;div class="pswp__preloader__donut"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"&gt;
+ &lt;div class="pswp__share-tooltip"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"&gt;
+ &lt;/button&gt;
+ &lt;button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"&gt;
+ &lt;/button&gt;
+ &lt;div class="pswp__caption"&gt;
+ &lt;div class="pswp__caption__center"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;An adapter board based on &lt;strong&gt;ESP32-C6&lt;/strong&gt; for upgrading ready-made relay modules in the popular “Arduino relay board” form factor.&lt;/p&gt;
+&lt;p&gt;It supports both classic electromechanical relay boards and solid-state relay boards, typically with &lt;strong&gt;2 / 4 / 8 channels&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The idea is simple: replace the stock controller with a compact C6 board, and your old relay module gets modern wireless connectivity: &lt;strong&gt;Wi‑Fi 6, BLE 5, Zigbee / Thread (802.15.4)&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>ESP32 C6 D1</title><link>/posts/esp32_c6_d1/</link><pubDate>Fri, 02 May 2025 00:00:00 +0000</pubDate><guid>/posts/esp32_c6_d1/</guid><description>&lt;p&gt;Unleash the future of wireless connectivity with &lt;strong&gt;ESP32 C6 D1&lt;/strong&gt; — a compact, feature-packed dev board crafted in the iconic Wemos D1 form factor, designed for developers craving speed, efficiency, and versatility.&lt;br&gt;
 Built on Espressif’s cutting-edge ESP32-C6, this board supercharges your IoT projects.&lt;/p&gt;
 &lt;p&gt;✅ Wemos D1 Form Factor – Seamless compatibility with existing shields, sensors, and accessories.&lt;br&gt;
 ✅ RISC-V Core – High performance (160 MHz) meets energy efficiency for battery-powered brilliance.&lt;br&gt;
