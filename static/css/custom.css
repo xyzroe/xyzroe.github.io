@@ -56,3 +56,46 @@
 .language__img_active {
   opacity: 1;
 }
+
+.notice {
+  margin: 1rem 0;
+  padding: 0.9rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #2a3040;
+  border-left: 4px solid #8b949e;
+  background: #161b22;
+  color: #dbe2ea;
+}
+
+.notice .notice-title {
+  margin-bottom: 0.35rem;
+  font-weight: 700;
+}
+
+.notice .notice-body p {
+  margin: 0;
+}
+
+.notice-warning {
+  border-left-color: #f59e0b;
+}
+
+.notice-warning .notice-title {
+  color: #fbbf24;
+}
+
+.notice-info {
+  border-left-color: #60a5fa;
+}
+
+.notice-info .notice-title {
+  color: #93c5fd;
+}
+
+.notice-success {
+  border-left-color: #34d399;
+}
+
+.notice-success .notice-title {
+  color: #6ee7b7;
+}
